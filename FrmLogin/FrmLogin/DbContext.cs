@@ -21,7 +21,10 @@ namespace BibliotecaStar
             base.OnConfiguring(optionsBuilder);
         }
         public DbSet<livro> Livros { get; set; }
-      
+        public DbSet<genero> Generos { get; set; }
+        public DbSet<emprestimo> Emprestimos { get; set; }
+        public DbSet<aluno> Alunos { get; set; }
+
 
 
 
