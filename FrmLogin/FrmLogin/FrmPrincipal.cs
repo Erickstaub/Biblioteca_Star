@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BibliotecaStar;
 
 namespace FrmLogin
 {
@@ -27,6 +28,13 @@ namespace FrmLogin
             this.Close();
             var frml = new FrmLogin();
             frml.Show();
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            
+            var frma = new FrmLivro();
+            frma.Show();
         }
     }
 }

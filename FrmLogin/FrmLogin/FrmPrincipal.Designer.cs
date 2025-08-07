@@ -120,7 +120,7 @@
             BtnEmpre.ShadowDecoration.CustomizableEdges = customizableEdges6;
             BtnEmpre.Size = new Size(300, 68);
             BtnEmpre.TabIndex = 3;
-            BtnEmpre.Text = "Pegar Livro";
+            BtnEmpre.Text = "Retiradas";
             // 
             // BtnAdd
             // 
@@ -138,7 +138,8 @@
             BtnAdd.ShadowDecoration.CustomizableEdges = customizableEdges8;
             BtnAdd.Size = new Size(300, 68);
             BtnAdd.TabIndex = 2;
-            BtnAdd.Text = "Adsonar Livro";
+            BtnAdd.Text = "Livros";
+            BtnAdd.Click += BtnAdd_Click;
             // 
             // BtnHome
             // 
