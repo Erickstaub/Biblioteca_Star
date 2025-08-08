@@ -217,6 +217,7 @@
             TxtPesquisa.ShadowDecoration.CustomizableEdges = customizableEdges12;
             TxtPesquisa.Size = new Size(429, 90);
             TxtPesquisa.TabIndex = 10;
+            TxtPesquisa.TextChanged += TxtPesquisa_TextChanged;
             // 
             // guna2Button1
             // 

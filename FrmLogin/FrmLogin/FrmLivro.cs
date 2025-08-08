@@ -39,7 +39,12 @@ namespace BibliotecaStar
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             var cadl = new FrmLivroCad();
-            cadl.ShowDialog(); 
+            cadl.ShowDialog();
+        }
+
+        private void TxtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            BuscarLivro();
         }
     }
 }
