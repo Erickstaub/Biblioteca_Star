@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FrmLogin;
 
 namespace BibliotecaStar
 {
     public partial class FrmLivro : Form
     {
+        livro? livroselec;
         public FrmLivro()
         {
             InitializeComponent();
@@ -45,6 +47,19 @@ namespace BibliotecaStar
         private void TxtPesquisa_TextChanged(object sender, EventArgs e)
         {
             BuscarLivro();
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            livroselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as livro;
+            string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+            if (livroselec != null)
+            {
+                var usucad = new FrmLivroInf(livroselec);
+                usucad.ShowDialog();
+               
+                livroselec = null;
+            }
         }
     }
 }

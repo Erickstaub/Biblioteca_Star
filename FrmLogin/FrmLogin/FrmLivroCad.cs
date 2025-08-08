@@ -28,8 +28,8 @@ namespace BibliotecaStar
 
             using (var bd = new DBContext())
             {
-                var genero = bd.Generos.Select(g => new { g.Id, g.tipo }).ToList();
-                ComboGenero.DataSource = genero;
+                //var genero = bd.Generos.Select(g => new { g.Id, g.tipo }).ToList();
+               // ComboGenero.DataSource = genero;
                 ComboGenero.DisplayMember = "tipo";
                 ComboGenero.ValueMember = "Id";
                 var CBG = (int)ComboGenero.SelectedValue;
@@ -72,7 +72,7 @@ namespace BibliotecaStar
                     ano_de_publicação = ano,
                     quantidade = quant,
                     ISBN = ISBN,
-                    generoID = gen,
+                    //generoID = gen,
 
 
                 };

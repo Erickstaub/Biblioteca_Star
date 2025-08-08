@@ -197,6 +197,7 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 33;
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick;
             // 
             // TxtPesquisa
             // 
@@ -229,7 +230,7 @@
             guna2Button1.FillColor = Color.FromArgb(128, 255, 128);
             guna2Button1.Font = new Font("Segoe UI", 14F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(399, 95);
+            guna2Button1.Location = new Point(687, 677);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Button1.Size = new Size(270, 68);

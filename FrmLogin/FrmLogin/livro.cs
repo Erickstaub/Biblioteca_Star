@@ -18,7 +18,7 @@ namespace FrmLogin
         public string autor { get; set; }
         public string editora { get; set; }
         public int ano_de_publicação { get; set; }
-        public int generoID { get; set; }
+        public string genero { get; set; }
         public string ISBN { get; set; }
         public int quantidade { get; set; }
     }
