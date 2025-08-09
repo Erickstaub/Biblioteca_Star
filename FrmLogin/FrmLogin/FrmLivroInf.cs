@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FrmLogin;
+using Guna.UI2.WinForms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace BibliotecaStar
@@ -30,13 +31,22 @@ namespace BibliotecaStar
                 TxtAutor.Text = _livros.autor;
                 TxtEditora.Text = _livros.editora;
                 TxtAno.Text = _livros.ano_de_publicação.ToString("F2");
-               
+
 
             }
         }
         public FrmLivroInf()
         {
             InitializeComponent();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+            msg.Text = "Operação realizada com sucesso!";
+            msg.Caption = "Sucesso";
+            msg.Icon = MessageDialogIcon.Information;
+            msg.Show();
         }
     }
 }

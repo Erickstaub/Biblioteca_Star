@@ -44,17 +44,15 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             TxtTitulo = new Guna.UI2.WinForms.Guna2TextBox();
             TxtQuant = new Guna.UI2.WinForms.Guna2TextBox();
             TxtEditora = new Guna.UI2.WinForms.Guna2TextBox();
             TxtAutor = new Guna.UI2.WinForms.Guna2TextBox();
             TxtAno = new Guna.UI2.WinForms.Guna2TextBox();
-            ComboGenero = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             GeraISBN = new Guna.UI2.WinForms.Guna2Button();
             TxtISBN = new Guna.UI2.WinForms.Guna2TextBox();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // TxtTitulo
@@ -167,26 +165,9 @@
             TxtAno.Size = new Size(218, 57);
             TxtAno.TabIndex = 4;
             // 
-            // ComboGenero
-            // 
-            ComboGenero.BackColor = Color.Transparent;
-            ComboGenero.CustomizableEdges = customizableEdges11;
-            ComboGenero.DrawMode = DrawMode.OwnerDrawFixed;
-            ComboGenero.DropDownStyle = ComboBoxStyle.DropDownList;
-            ComboGenero.FocusedColor = Color.FromArgb(94, 148, 255);
-            ComboGenero.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ComboGenero.Font = new Font("Segoe UI", 14F);
-            ComboGenero.ForeColor = Color.FromArgb(68, 88, 112);
-            ComboGenero.ItemHeight = 30;
-            ComboGenero.Location = new Point(24, 110);
-            ComboGenero.Name = "ComboGenero";
-            ComboGenero.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            ComboGenero.Size = new Size(218, 36);
-            ComboGenero.TabIndex = 5;
-            // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges13;
+            guna2Button1.CustomizableEdges = customizableEdges11;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -196,7 +177,7 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Location = new Point(389, 488);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button1.Size = new Size(270, 68);
             guna2Button1.TabIndex = 12;
             guna2Button1.Text = "+ Item";
@@ -204,7 +185,7 @@
             // 
             // GeraISBN
             // 
-            GeraISBN.CustomizableEdges = customizableEdges15;
+            GeraISBN.CustomizableEdges = customizableEdges13;
             GeraISBN.DisabledState.BorderColor = Color.DarkGray;
             GeraISBN.DisabledState.CustomBorderColor = Color.DarkGray;
             GeraISBN.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -214,7 +195,7 @@
             GeraISBN.ForeColor = Color.White;
             GeraISBN.Location = new Point(257, 304);
             GeraISBN.Name = "GeraISBN";
-            GeraISBN.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            GeraISBN.ShadowDecoration.CustomizableEdges = customizableEdges14;
             GeraISBN.Size = new Size(270, 68);
             GeraISBN.TabIndex = 13;
             GeraISBN.Text = "ISBN";
@@ -222,7 +203,7 @@
             // 
             // TxtISBN
             // 
-            TxtISBN.CustomizableEdges = customizableEdges17;
+            TxtISBN.CustomizableEdges = customizableEdges15;
             TxtISBN.DefaultText = "";
             TxtISBN.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtISBN.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -238,19 +219,28 @@
             TxtISBN.PlaceholderForeColor = Color.Black;
             TxtISBN.PlaceholderText = "Autor";
             TxtISBN.SelectedText = "";
-            TxtISBN.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            TxtISBN.ShadowDecoration.CustomizableEdges = customizableEdges16;
             TxtISBN.Size = new Size(218, 57);
             TxtISBN.TabIndex = 14;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Terror", "Romance", "Suspence" });
+            comboBox1.Location = new Point(66, 137);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(182, 33);
+            comboBox1.TabIndex = 15;
             // 
             // FrmLivroCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(785, 677);
+            Controls.Add(comboBox1);
             Controls.Add(TxtISBN);
             Controls.Add(GeraISBN);
             Controls.Add(guna2Button1);
-            Controls.Add(ComboGenero);
             Controls.Add(TxtAno);
             Controls.Add(TxtAutor);
             Controls.Add(TxtEditora);
@@ -270,9 +260,9 @@
         private Guna.UI2.WinForms.Guna2TextBox TxtEditora;
         private Guna.UI2.WinForms.Guna2TextBox TxtAutor;
         private Guna.UI2.WinForms.Guna2TextBox TxtAno;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboGenero;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button GeraISBN;
         private Guna.UI2.WinForms.Guna2TextBox TxtISBN;
+        private ComboBox comboBox1;
     }
 }

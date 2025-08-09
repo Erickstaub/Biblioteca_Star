@@ -26,14 +26,7 @@ namespace BibliotecaStar
         private void FrmLivroCad_Load(object sender, EventArgs e)
         {
 
-            using (var bd = new DBContext())
-            {
-                //var genero = bd.Generos.Select(g => new { g.Id, g.tipo }).ToList();
-               // ComboGenero.DataSource = genero;
-                ComboGenero.DisplayMember = "tipo";
-                ComboGenero.ValueMember = "Id";
-                var CBG = (int)ComboGenero.SelectedValue;
-            }
+
 
         }
         private void GeraISBN_Click(object sender, EventArgs e)
@@ -61,7 +54,7 @@ namespace BibliotecaStar
                 string editor = TxtEditora.Text;
                 int ano = int.Parse(TxtAno.Text);
                 int quant = int.Parse(TxtQuant.Text);
-                int gen = (int)ComboGenero.SelectedValue;
+                string gen = comboBox1.Text;
                 string ISBN = TxtISBN.Text;
 
                 var livroNovo = new livro()
@@ -72,17 +65,22 @@ namespace BibliotecaStar
                     ano_de_publicação = ano,
                     quantidade = quant,
                     ISBN = ISBN,
-                    //generoID = gen,
+                    genero = gen,
+
 
 
                 };
                 banco.Livros.Add(livroNovo);
                 banco.SaveChanges();
             }
-            MessageBox.Show("Livro salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+            msg.Text = "Livro salvo com sucesso!";
+            msg.Caption = "Sucesso";
+            msg.Icon = MessageDialogIcon.Information;
+            msg.Show();
             this.Close();
+
         }
 
-        
     }
 }

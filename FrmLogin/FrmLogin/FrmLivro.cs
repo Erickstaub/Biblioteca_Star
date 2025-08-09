@@ -32,7 +32,8 @@ namespace BibliotecaStar
                 if (!string.IsNullOrEmpty(TxtPesquisa.Text))
                 {
                     livros = livros.Where(c => c.titulo.Contains(TxtPesquisa.Text) ||
-                                                c.autor.Contains(TxtPesquisa.Text));
+                                                c.autor.Contains(TxtPesquisa.Text) ||
+                                                c.genero.Contains(CBgen.Text));
                 }
                 guna2DataGridView1.DataSource = livros.ToList();
             }

@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             TxtTitulo = new Label();
             TxtAutor = new Label();
             TxtEditora = new Label();
             TxtAno = new Label();
             TxtGenero = new Label();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // TxtTitulo
@@ -80,11 +83,30 @@
             TxtGenero.TabIndex = 4;
             TxtGenero.Text = "ddd";
             // 
+            // guna2Button1
+            // 
+            guna2Button1.CustomizableEdges = customizableEdges1;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.FromArgb(128, 255, 128);
+            guna2Button1.Font = new Font("Segoe UI", 14F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(225, 497);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button1.Size = new Size(270, 68);
+            guna2Button1.TabIndex = 13;
+            guna2Button1.Text = "+ Item";
+            guna2Button1.Click += guna2Button1_Click;
+            // 
             // FrmLivroInf
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(646, 673);
+            Controls.Add(guna2Button1);
             Controls.Add(TxtGenero);
             Controls.Add(TxtAno);
             Controls.Add(TxtEditora);
@@ -104,5 +126,6 @@
         private Label TxtEditora;
         private Label TxtAno;
         private Label TxtGenero;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
