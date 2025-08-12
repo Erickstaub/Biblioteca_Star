@@ -29,20 +29,29 @@ namespace BibliotecaStar
 
 
         }
-        private void GeraISBN_Click(object sender, EventArgs e)
-        {
-            var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            var rnd = new Random();
-            var isbnfake = new char[13];
-
-            for (int i = 0; i < 13; i++)
-                isbnfake[i] = chars[rnd.Next(chars.Length)];
-
-            TxtISBN.Text = new string(isbnfake);
-        }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            InserirLivro();
+            if (int.Parse(TxtQuant.Text) > 1)
+            {
+                string opcoes = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                Random ran = new Random();
+                string isbn = "";
+
+                for (int i = 0; i < 13; i++)
+                    isbn += opcoes[ran.Next(opcoes.Length)];
+
+                TxtISBN.Text = isbn;
+                InserirLivro();
+            }
+            else
+            {
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "Ocorreu um erro!";
+                msg.Caption = "Erro!";
+                msg.Icon = MessageDialogIcon.Information;
+                msg.Show();
+
+            }
         }
 
         private void InserirLivro()
@@ -82,5 +91,9 @@ namespace BibliotecaStar
 
         }
 
+        private void TxtTitulo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

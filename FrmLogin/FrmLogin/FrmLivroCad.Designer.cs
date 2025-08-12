@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges71 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges72 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges73 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges74 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges75 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges76 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges77 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges78 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges79 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges80 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges81 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges82 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges83 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges84 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLivroCad));
             TxtTitulo = new Guna.UI2.WinForms.Guna2TextBox();
             TxtQuant = new Guna.UI2.WinForms.Guna2TextBox();
             TxtEditora = new Guna.UI2.WinForms.Guna2TextBox();
             TxtAutor = new Guna.UI2.WinForms.Guna2TextBox();
             TxtAno = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            GeraISBN = new Guna.UI2.WinForms.Guna2Button();
             TxtISBN = new Guna.UI2.WinForms.Guna2TextBox();
             comboBox1 = new ComboBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // TxtTitulo
             // 
-            TxtTitulo.CustomizableEdges = customizableEdges1;
+            TxtTitulo.CustomizableEdges = customizableEdges71;
             TxtTitulo.DefaultText = "";
             TxtTitulo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtTitulo.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -67,19 +67,20 @@
             TxtTitulo.Font = new Font("Segoe UI", 14F);
             TxtTitulo.ForeColor = Color.Black;
             TxtTitulo.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtTitulo.Location = new Point(24, 26);
+            TxtTitulo.Location = new Point(379, 80);
             TxtTitulo.Margin = new Padding(6, 8, 6, 8);
             TxtTitulo.Name = "TxtTitulo";
             TxtTitulo.PlaceholderForeColor = Color.Black;
             TxtTitulo.PlaceholderText = "Titulo";
             TxtTitulo.SelectedText = "";
-            TxtTitulo.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            TxtTitulo.ShadowDecoration.CustomizableEdges = customizableEdges72;
             TxtTitulo.Size = new Size(218, 57);
             TxtTitulo.TabIndex = 0;
+            TxtTitulo.TextChanged += TxtTitulo_TextChanged;
             // 
             // TxtQuant
             // 
-            TxtQuant.CustomizableEdges = customizableEdges3;
+            TxtQuant.CustomizableEdges = customizableEdges73;
             TxtQuant.DefaultText = "";
             TxtQuant.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtQuant.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -89,19 +90,20 @@
             TxtQuant.Font = new Font("Segoe UI", 14F);
             TxtQuant.ForeColor = Color.Black;
             TxtQuant.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtQuant.Location = new Point(484, 99);
+            TxtQuant.Location = new Point(379, 372);
             TxtQuant.Margin = new Padding(6, 8, 6, 8);
             TxtQuant.Name = "TxtQuant";
             TxtQuant.PlaceholderForeColor = Color.Black;
             TxtQuant.PlaceholderText = "quantidade";
             TxtQuant.SelectedText = "";
-            TxtQuant.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            TxtQuant.ShadowDecoration.CustomizableEdges = customizableEdges74;
             TxtQuant.Size = new Size(218, 57);
             TxtQuant.TabIndex = 1;
+         
             // 
             // TxtEditora
             // 
-            TxtEditora.CustomizableEdges = customizableEdges5;
+            TxtEditora.CustomizableEdges = customizableEdges75;
             TxtEditora.DefaultText = "";
             TxtEditora.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtEditora.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -111,19 +113,20 @@
             TxtEditora.Font = new Font("Segoe UI", 14F);
             TxtEditora.ForeColor = Color.Black;
             TxtEditora.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtEditora.Location = new Point(484, 26);
+            TxtEditora.Location = new Point(379, 226);
             TxtEditora.Margin = new Padding(6, 8, 6, 8);
             TxtEditora.Name = "TxtEditora";
             TxtEditora.PlaceholderForeColor = Color.Black;
             TxtEditora.PlaceholderText = "Editora";
             TxtEditora.SelectedText = "";
-            TxtEditora.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            TxtEditora.ShadowDecoration.CustomizableEdges = customizableEdges76;
             TxtEditora.Size = new Size(218, 57);
             TxtEditora.TabIndex = 2;
+        
             // 
             // TxtAutor
             // 
-            TxtAutor.CustomizableEdges = customizableEdges7;
+            TxtAutor.CustomizableEdges = customizableEdges77;
             TxtAutor.DefaultText = "";
             TxtAutor.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtAutor.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -133,19 +136,20 @@
             TxtAutor.Font = new Font("Segoe UI", 14F);
             TxtAutor.ForeColor = Color.Black;
             TxtAutor.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtAutor.Location = new Point(254, 26);
+            TxtAutor.Location = new Point(379, 153);
             TxtAutor.Margin = new Padding(6, 8, 6, 8);
             TxtAutor.Name = "TxtAutor";
             TxtAutor.PlaceholderForeColor = Color.Black;
             TxtAutor.PlaceholderText = "Autor";
             TxtAutor.SelectedText = "";
-            TxtAutor.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            TxtAutor.ShadowDecoration.CustomizableEdges = customizableEdges78;
             TxtAutor.Size = new Size(218, 57);
             TxtAutor.TabIndex = 3;
+          
             // 
             // TxtAno
             // 
-            TxtAno.CustomizableEdges = customizableEdges9;
+            TxtAno.CustomizableEdges = customizableEdges79;
             TxtAno.DefaultText = "";
             TxtAno.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtAno.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -155,91 +159,88 @@
             TxtAno.Font = new Font("Segoe UI", 14F);
             TxtAno.ForeColor = Color.Black;
             TxtAno.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtAno.Location = new Point(254, 99);
+            TxtAno.Location = new Point(379, 299);
             TxtAno.Margin = new Padding(6, 8, 6, 8);
             TxtAno.Name = "TxtAno";
             TxtAno.PlaceholderForeColor = Color.Black;
             TxtAno.PlaceholderText = "Ano ";
             TxtAno.SelectedText = "";
-            TxtAno.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            TxtAno.ShadowDecoration.CustomizableEdges = customizableEdges80;
             TxtAno.Size = new Size(218, 57);
             TxtAno.TabIndex = 4;
+      
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges11;
+            guna2Button1.CustomizableEdges = customizableEdges81;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(128, 255, 128);
+            guna2Button1.FillColor = Color.FromArgb(0, 192, 0);
             guna2Button1.Font = new Font("Segoe UI", 14F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(389, 488);
+            guna2Button1.Location = new Point(379, 597);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges82;
             guna2Button1.Size = new Size(270, 68);
             guna2Button1.TabIndex = 12;
             guna2Button1.Text = "+ Item";
             guna2Button1.Click += guna2Button1_Click;
             // 
-            // GeraISBN
-            // 
-            GeraISBN.CustomizableEdges = customizableEdges13;
-            GeraISBN.DisabledState.BorderColor = Color.DarkGray;
-            GeraISBN.DisabledState.CustomBorderColor = Color.DarkGray;
-            GeraISBN.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            GeraISBN.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            GeraISBN.FillColor = Color.FromArgb(128, 255, 128);
-            GeraISBN.Font = new Font("Segoe UI", 14F);
-            GeraISBN.ForeColor = Color.White;
-            GeraISBN.Location = new Point(257, 304);
-            GeraISBN.Name = "GeraISBN";
-            GeraISBN.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            GeraISBN.Size = new Size(270, 68);
-            GeraISBN.TabIndex = 13;
-            GeraISBN.Text = "ISBN";
-            GeraISBN.Click += GeraISBN_Click;
-            // 
             // TxtISBN
             // 
-            TxtISBN.CustomizableEdges = customizableEdges15;
-            TxtISBN.DefaultText = "";
+            TxtISBN.BorderColor = Color.FromArgb(224, 224, 224);
+            TxtISBN.CustomizableEdges = customizableEdges83;
+            TxtISBN.DefaultText = ".";
             TxtISBN.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtISBN.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             TxtISBN.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             TxtISBN.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TxtISBN.FillColor = Color.WhiteSmoke;
             TxtISBN.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtISBN.Font = new Font("Segoe UI", 14F);
+            TxtISBN.Font = new Font("Segoe UI", 1F);
             TxtISBN.ForeColor = Color.Black;
             TxtISBN.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtISBN.Location = new Point(36, 204);
-            TxtISBN.Margin = new Padding(6, 8, 6, 8);
+            TxtISBN.Location = new Point(593, 10);
+            TxtISBN.Margin = new Padding(1);
             TxtISBN.Name = "TxtISBN";
             TxtISBN.PlaceholderForeColor = Color.Black;
             TxtISBN.PlaceholderText = "Autor";
             TxtISBN.SelectedText = "";
-            TxtISBN.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            TxtISBN.Size = new Size(218, 57);
+            TxtISBN.ShadowDecoration.CustomizableEdges = customizableEdges84;
+            TxtISBN.Size = new Size(22, 7);
             TxtISBN.TabIndex = 14;
             // 
             // comboBox1
             // 
+            comboBox1.Font = new Font("Segoe UI", 17F);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Terror", "Romance", "Suspence" });
-            comboBox1.Location = new Point(66, 137);
+            comboBox1.Items.AddRange(new object[] { "Aventura", "Biografia", "Ciências", "Drama", "Fantasia", "Ficção científica", "História", "Infantil", "Infantojuvenil", "Mistério", "Poesia", "Policial", "Romance", "Suspense", "Terror" });
+            comboBox1.Location = new Point(379, 440);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
+            comboBox1.Size = new Size(221, 54);
             comboBox1.TabIndex = 15;
+ 
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 80);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(288, 319);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
             // 
             // FrmLivroCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(785, 677);
+            ClientSize = new Size(661, 677);
+            Controls.Add(pictureBox1);
             Controls.Add(comboBox1);
             Controls.Add(TxtISBN);
-            Controls.Add(GeraISBN);
             Controls.Add(guna2Button1);
             Controls.Add(TxtAno);
             Controls.Add(TxtAutor);
@@ -250,6 +251,7 @@
             Name = "FrmLivroCad";
             Text = "FrmLivroCad";
             Load += FrmLivroCad_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -261,8 +263,8 @@
         private Guna.UI2.WinForms.Guna2TextBox TxtAutor;
         private Guna.UI2.WinForms.Guna2TextBox TxtAno;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button GeraISBN;
         private Guna.UI2.WinForms.Guna2TextBox TxtISBN;
         private ComboBox comboBox1;
+        private PictureBox pictureBox1;
     }
 }
