@@ -32,9 +32,15 @@ namespace FrmLogin
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            
+
             var frma = new FrmLivro();
             frma.Show();
+        }
+
+        private void BtnAluno_Click(object sender, EventArgs e)
+        {
+            var frmaluno = new FrmAluno();
+            frmaluno.ShowDialog();
         }
     }
 }

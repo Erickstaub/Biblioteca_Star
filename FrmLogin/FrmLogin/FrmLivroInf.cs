@@ -30,7 +30,8 @@ namespace BibliotecaStar
                 TxtTitulo.Text = _livros.titulo;
                 TxtAutor.Text = _livros.autor;
                 TxtEditora.Text = _livros.editora;
-                TxtAno.Text = _livros.ano_de_publicação.ToString("F2");
+                TxtAno.Text = _livros.ano_de_publicação.ToString("0");
+                TxtGenero.Text = _livros.genero;
 
 
             }
@@ -42,11 +43,30 @@ namespace BibliotecaStar
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            AlugarLivro();
             var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
-            msg.Text = "Operação realizada com sucesso!";
+            msg.Text = "Operação realizada com sucesso! Mais informações na aba de Alugueis";
             msg.Caption = "Sucesso";
             msg.Icon = MessageDialogIcon.Information;
             msg.Show();
+        }
+
+        private void AlugarLivro()
+        {
+            using (var banco = new DBContext())
+            {
+                string data_retirada = DateTime.Now.ToString("dd/MM/yyyy");
+                string data_devolucao = DateTime.Now.AddDays(7).ToString("dd/MM/yyyy");
+                string status = "Alugado";
+                // int aluno_id = int.Parse(TxtIdAluno.Text);
+
+                var livroalugado = new emprestimo()
+                {
+                    dataEmprestimo = data_retirada,
+                    dataDevolucao = data_devolucao,
+                    status = status,
+                };
+            }
         }
     }
 }

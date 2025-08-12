@@ -103,6 +103,7 @@
             BtnAluno.Size = new Size(300, 68);
             BtnAluno.TabIndex = 4;
             BtnAluno.Text = "Aluno";
+            BtnAluno.Click += BtnAluno_Click;
             // 
             // BtnEmpre
             // 
@@ -120,7 +121,7 @@
             BtnEmpre.ShadowDecoration.CustomizableEdges = customizableEdges6;
             BtnEmpre.Size = new Size(300, 68);
             BtnEmpre.TabIndex = 3;
-            BtnEmpre.Text = "Retiradas";
+            BtnEmpre.Text = "Alugueis";
             // 
             // BtnAdd
             // 
