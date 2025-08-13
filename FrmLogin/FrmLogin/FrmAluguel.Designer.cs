@@ -60,6 +60,7 @@
             TxtPesquisa.ShadowDecoration.CustomizableEdges = customizableEdges2;
             TxtPesquisa.Size = new Size(290, 56);
             TxtPesquisa.TabIndex = 17;
+            TxtPesquisa.TextChanged += TxtPesquisa_TextChanged;
             // 
             // guna2Button1
             // 
@@ -76,7 +77,6 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button1.Size = new Size(270, 68);
             guna2Button1.TabIndex = 16;
-            guna2Button1.Text = "+ Item";
             // 
             // guna2DataGridView1
             // 
@@ -128,6 +128,7 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 33;
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            guna2DataGridView1.CellClick += guna2DataGridView1_CellClick;
             // 
             // FrmAluguel
             // 
