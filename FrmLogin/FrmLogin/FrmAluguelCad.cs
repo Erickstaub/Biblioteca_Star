@@ -108,23 +108,10 @@ namespace BibliotecaStar
             msg.Icon = MessageDialogIcon.Information;
             msg.Show();
             this.Close();
+           
 
         }
-        private void BuscarEmprestimos()
-        {
-            using (var bd = new DBContext())
-            {
-                var alugel = bd.Emprestimos.AsQueryable();
-                //if (!string.IsNullOrEmpty(TxtPesquisa.Text))
-                //{
-                 //   alugel = alugel.Where(c => c.dataDevolucao.Contains(TxtPesquisa.Text) ||
-                                             //   c.status.Contains(TxtPesquisa.Text));
-
-               //     guna2DataGridView1.DataSource = alugel.ToList();
-              //  }
-              //  else { guna2DataGridView1.DataSource = alugel.ToList(); }
-            }
-        }
+        
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.Text == "Renovado")

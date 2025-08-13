@@ -29,10 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAluguelCad));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             pictureBox1 = new PictureBox();
             comboBox1 = new ComboBox();
             TxtISBN = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,7 +50,9 @@
             TxtStatus = new Label();
             TxtData2 = new Label();
             TxtData1 = new Label();
+            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -73,7 +78,7 @@
             // TxtISBN
             // 
             TxtISBN.BorderColor = Color.FromArgb(224, 224, 224);
-            TxtISBN.CustomizableEdges = customizableEdges1;
+            TxtISBN.CustomizableEdges = customizableEdges5;
             TxtISBN.DefaultText = ".";
             TxtISBN.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtISBN.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -90,13 +95,13 @@
             TxtISBN.PlaceholderForeColor = Color.Black;
             TxtISBN.PlaceholderText = "Autor";
             TxtISBN.SelectedText = "";
-            TxtISBN.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            TxtISBN.ShadowDecoration.CustomizableEdges = customizableEdges6;
             TxtISBN.Size = new Size(22, 7);
             TxtISBN.TabIndex = 23;
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges3;
+            guna2Button1.CustomizableEdges = customizableEdges7;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -106,7 +111,7 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Location = new Point(370, 529);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button1.Size = new Size(270, 68);
             guna2Button1.TabIndex = 22;
             guna2Button1.Text = "+ Item";
@@ -117,50 +122,50 @@
             label5.AutoSize = true;
             label5.Location = new Point(437, 212);
             label5.Name = "label5";
-            label5.Size = new Size(68, 25);
+            label5.Size = new Size(61, 25);
             label5.TabIndex = 35;
-            label5.Text = "genero";
+            label5.Text = "livroid";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(437, 165);
+            label4.Location = new Point(428, 165);
             label4.Name = "label4";
-            label4.Size = new Size(74, 25);
+            label4.Size = new Size(71, 25);
             label4.TabIndex = 34;
-            label4.Text = "lançado";
+            label4.Text = "alunoid";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(437, 76);
+            label3.Location = new Point(425, 76);
             label3.Name = "label3";
-            label3.Size = new Size(58, 25);
+            label3.Size = new Size(80, 25);
             label3.TabIndex = 33;
-            label3.Text = "autor:";
+            label3.Text = "devolver";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(437, 123);
             label2.Name = "label2";
-            label2.Size = new Size(68, 25);
+            label2.Size = new Size(59, 25);
             label2.TabIndex = 32;
-            label2.Text = "editora";
+            label2.Text = "status";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(437, 35);
+            label1.Location = new Point(428, 35);
             label1.Name = "label1";
-            label1.Size = new Size(57, 25);
+            label1.Size = new Size(77, 25);
             label1.TabIndex = 31;
-            label1.Text = "titulo:";
+            label1.Text = "alugado";
             // 
             // TxtLivroId
             // 
             TxtLivroId.AutoSize = true;
-            TxtLivroId.Location = new Point(511, 212);
+            TxtLivroId.Location = new Point(511, 165);
             TxtLivroId.Name = "TxtLivroId";
             TxtLivroId.Size = new Size(16, 25);
             TxtLivroId.TabIndex = 30;
@@ -169,7 +174,7 @@
             // TxtAlunoId
             // 
             TxtAlunoId.AutoSize = true;
-            TxtAlunoId.Location = new Point(511, 165);
+            TxtAlunoId.Location = new Point(511, 212);
             TxtAlunoId.Name = "TxtAlunoId";
             TxtAlunoId.Size = new Size(16, 25);
             TxtAlunoId.TabIndex = 29;
@@ -202,11 +207,63 @@
             TxtData1.TabIndex = 26;
             TxtData1.Text = ".";
             // 
+            // guna2DataGridView1
+            // 
+            dataGridViewCellStyle4.BackColor = Color.White;
+            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            guna2DataGridView1.ColumnHeadersHeight = 4;
+            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.White;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView1.Location = new Point(-148, 94);
+            guna2DataGridView1.Name = "guna2DataGridView1";
+            guna2DataGridView1.RowHeadersVisible = false;
+            guna2DataGridView1.RowHeadersWidth = 62;
+            guna2DataGridView1.Size = new Size(118, 10);
+            guna2DataGridView1.TabIndex = 36;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.BackColor = Color.White;
+            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
+            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 33;
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
             // FrmAluguelCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(653, 626);
+            Controls.Add(guna2DataGridView1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -225,6 +282,7 @@
             Name = "FrmAluguelCad";
             Text = "FrmAluguelCad";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -245,5 +303,6 @@
         private Label TxtStatus;
         private Label TxtData2;
         private Label TxtData1;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
     }
 }
