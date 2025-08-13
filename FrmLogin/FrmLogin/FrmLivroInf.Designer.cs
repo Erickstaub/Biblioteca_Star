@@ -36,6 +36,12 @@
             TxtAno = new Label();
             TxtGenero = new Label();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // TxtTitulo
@@ -101,11 +107,71 @@
             guna2Button1.Text = "Alugar";
             guna2Button1.Click += guna2Button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(183, 95);
+            label1.Name = "label1";
+            label1.Size = new Size(57, 25);
+            label1.TabIndex = 14;
+            label1.Text = "titulo:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(183, 183);
+            label2.Name = "label2";
+            label2.Size = new Size(68, 25);
+            label2.TabIndex = 15;
+            label2.Text = "editora";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(183, 136);
+            label3.Name = "label3";
+            label3.Size = new Size(58, 25);
+            label3.TabIndex = 16;
+            label3.Text = "autor:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(183, 225);
+            label4.Name = "label4";
+            label4.Size = new Size(74, 25);
+            label4.TabIndex = 17;
+            label4.Text = "lançado";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(183, 272);
+            label5.Name = "label5";
+            label5.Size = new Size(68, 25);
+            label5.TabIndex = 18;
+            label5.Text = "genero";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(463, 565);
+            label6.Name = "label6";
+            label6.Size = new Size(58, 25);
+            label6.TabIndex = 19;
+            label6.Text = "15 R$";
+            // 
             // FrmLivroInf
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(646, 673);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(guna2Button1);
             Controls.Add(TxtGenero);
             Controls.Add(TxtAno);
@@ -127,5 +193,11 @@
         private Label TxtAno;
         private Label TxtGenero;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }

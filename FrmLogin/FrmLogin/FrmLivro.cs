@@ -54,11 +54,13 @@ namespace BibliotecaStar
         {
             livroselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as livro;
             string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+           int Lid = int.Parse((guna2DataGridView1.CurrentRow.Cells["id"].Value).ToString());
             if (livroselec != null)
             {
+                
+            Memoria.LivroID = Lid;
                 var usucad = new FrmLivroInf(livroselec);
-                usucad.ShowDialog();
-               
+                usucad.ShowDialog();               
                 livroselec = null;
             }
         }

@@ -26,12 +26,14 @@ namespace FrmLogin
              private bool ValidateLogin(string nome, string senha)
         {
             bool UsuarioValido = false;
+           int Uid = 0;
             using (var banco = new DBContext())
             {
                 var usuario = banco.Alunos.FirstOrDefault(u => u.nome.ToLower().Equals(nome.ToLower()) && u.senha == senha);
-                    
+
                 if (usuario is not null)
-               // Memoria.UsuarioID = Alunos.id;
+                    Uid = usuario.Id;
+                Memoria.UsuarioID = Uid;
                 UsuarioValido = true;
 
             }

@@ -136,6 +136,7 @@
             BtnEmpre.Size = new Size(300, 68);
             BtnEmpre.TabIndex = 3;
             BtnEmpre.Text = "Alugueis";
+            BtnEmpre.Click += BtnEmpre_Click;
             // 
             // BtnAdd
             // 

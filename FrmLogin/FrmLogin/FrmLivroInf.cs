@@ -58,14 +58,21 @@ namespace BibliotecaStar
                 string data_retirada = DateTime.Now.ToString("dd/MM/yyyy");
                 string data_devolucao = DateTime.Now.AddDays(7).ToString("dd/MM/yyyy");
                 string status = "Alugado";
-                int aluno_id = 1;
+                int aluno_id = Memoria.UsuarioID;
+                int livro_id = Memoria.LivroID;
 
                 var livroalugado = new emprestimo()
                 {
                     dataEmprestimo = data_retirada,
                     dataDevolucao = data_devolucao,
                     status = status,
+                    alunoID = aluno_id,
+                    livroID = livro_id
+
                 };
+                banco.Emprestimos.Add(livroalugado);
+                banco.SaveChanges();
+
             }
         }
     }

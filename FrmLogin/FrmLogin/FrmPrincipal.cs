@@ -42,5 +42,11 @@ namespace FrmLogin
             var frmaluno = new FrmAluno();
             frmaluno.ShowDialog();
         }
+
+        private void BtnEmpre_Click(object sender, EventArgs e)
+        {
+            var frmemprestimo = new FrmAluguel();
+            frmemprestimo.ShowDialog();
+        }
     }
 }
