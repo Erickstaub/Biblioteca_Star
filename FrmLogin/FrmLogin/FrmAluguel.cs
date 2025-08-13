@@ -56,6 +56,8 @@ namespace BibliotecaStar
                 var usucad = new FrmAluguelCad(_aluguel);
                  usucad.ShowDialog();
                 _aluguel = null;
+
+
             }
         }
     }
