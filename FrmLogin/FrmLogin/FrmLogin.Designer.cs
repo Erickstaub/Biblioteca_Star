@@ -103,6 +103,7 @@
             guna2TextBox2.FillColor = Color.FromArgb(224, 224, 224);
             guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2TextBox2.ForeColor = Color.Black;
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.Location = new Point(42, 121);
             guna2TextBox2.Margin = new Padding(10, 11, 10, 11);
@@ -128,7 +129,7 @@
             guna2TextBox1.FillColor = Color.FromArgb(224, 224, 224);
             guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2TextBox1.ForeColor = Color.White;
+            guna2TextBox1.ForeColor = Color.Black;
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Location = new Point(42, 184);
             guna2TextBox1.Margin = new Padding(10, 11, 10, 11);
