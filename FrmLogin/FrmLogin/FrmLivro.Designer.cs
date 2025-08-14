@@ -49,6 +49,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLivro));
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             BtnEmpre = new Guna.UI2.WinForms.Guna2Button();
@@ -60,8 +61,10 @@
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             CBgen = new ComboBox();
+            pictureBox1 = new PictureBox();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // BtnFechar
@@ -74,24 +77,27 @@
             BtnFechar.FillColor = Color.WhiteSmoke;
             BtnFechar.Font = new Font("Segoe UI", 20F);
             BtnFechar.ForeColor = Color.Black;
-            BtnFechar.Location = new Point(1230, -3);
+            BtnFechar.Location = new Point(861, -2);
+            BtnFechar.Margin = new Padding(2, 2, 2, 2);
             BtnFechar.Name = "BtnFechar";
             BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            BtnFechar.Size = new Size(66, 68);
+            BtnFechar.Size = new Size(46, 41);
             BtnFechar.TabIndex = 8;
             BtnFechar.Text = "X";
             // 
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.FromArgb(224, 224, 224);
+            guna2Panel1.Controls.Add(pictureBox1);
             guna2Panel1.Controls.Add(BtnEmpre);
             guna2Panel1.Controls.Add(BtnAdd);
             guna2Panel1.Controls.Add(BtnHome);
             guna2Panel1.CustomizableEdges = customizableEdges9;
-            guna2Panel1.Location = new Point(0, -3);
+            guna2Panel1.Location = new Point(0, -2);
+            guna2Panel1.Margin = new Padding(2, 2, 2, 2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Panel1.Size = new Size(300, 774);
+            guna2Panel1.Size = new Size(210, 464);
             guna2Panel1.TabIndex = 7;
             // 
             // BtnEmpre
@@ -102,13 +108,14 @@
             BtnEmpre.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnEmpre.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnEmpre.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnEmpre.FillColor = Color.FromArgb(224, 224, 224);
+            BtnEmpre.FillColor = Color.CornflowerBlue;
             BtnEmpre.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnEmpre.ForeColor = Color.Black;
-            BtnEmpre.Location = new Point(-3, 342);
+            BtnEmpre.Location = new Point(-2, 205);
+            BtnEmpre.Margin = new Padding(2, 2, 2, 2);
             BtnEmpre.Name = "BtnEmpre";
             BtnEmpre.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            BtnEmpre.Size = new Size(300, 68);
+            BtnEmpre.Size = new Size(210, 41);
             BtnEmpre.TabIndex = 3;
             BtnEmpre.Text = "Retidas";
             // 
@@ -120,13 +127,14 @@
             BtnAdd.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnAdd.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnAdd.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnAdd.FillColor = Color.FromArgb(224, 224, 224);
+            BtnAdd.FillColor = Color.CornflowerBlue;
             BtnAdd.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnAdd.ForeColor = Color.Black;
-            BtnAdd.Location = new Point(-3, 268);
+            BtnAdd.Location = new Point(-2, 161);
+            BtnAdd.Margin = new Padding(2, 2, 2, 2);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            BtnAdd.Size = new Size(300, 68);
+            BtnAdd.Size = new Size(210, 41);
             BtnAdd.TabIndex = 2;
             BtnAdd.Text = "Livros";
             // 
@@ -138,13 +146,14 @@
             BtnHome.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnHome.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnHome.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnHome.FillColor = Color.FromArgb(224, 224, 224);
+            BtnHome.FillColor = Color.CornflowerBlue;
             BtnHome.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnHome.ForeColor = Color.Black;
-            BtnHome.Location = new Point(-3, 194);
+            BtnHome.Location = new Point(-2, 117);
+            BtnHome.Margin = new Padding(2, 2, 2, 2);
             BtnHome.Name = "BtnHome";
             BtnHome.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            BtnHome.Size = new Size(300, 68);
+            BtnHome.Size = new Size(210, 41);
             BtnHome.TabIndex = 1;
             BtnHome.Text = "Home";
             // 
@@ -171,11 +180,13 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(399, 191);
+            guna2DataGridView1.Location = new Point(279, 115);
+            guna2DataGridView1.Margin = new Padding(2, 2, 2, 2);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 62;
-            guna2DataGridView1.Size = new Size(839, 438);
+            guna2DataGridView1.RowTemplate.Height = 33;
+            guna2DataGridView1.Size = new Size(587, 263);
             guna2DataGridView1.TabIndex = 9;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -212,13 +223,12 @@
             TxtPesquisa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtPesquisa.Font = new Font("Segoe UI", 9F);
             TxtPesquisa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtPesquisa.Location = new Point(809, 73);
-            TxtPesquisa.Margin = new Padding(4, 5, 4, 5);
+            TxtPesquisa.Location = new Point(566, 44);
             TxtPesquisa.Name = "TxtPesquisa";
             TxtPesquisa.PlaceholderText = "";
             TxtPesquisa.SelectedText = "";
             TxtPesquisa.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            TxtPesquisa.Size = new Size(429, 90);
+            TxtPesquisa.Size = new Size(300, 54);
             TxtPesquisa.TabIndex = 10;
             TxtPesquisa.TextChanged += TxtPesquisa_TextChanged;
             // 
@@ -232,10 +242,11 @@
             guna2Button1.FillColor = Color.FromArgb(128, 255, 128);
             guna2Button1.Font = new Font("Segoe UI", 14F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(687, 677);
+            guna2Button1.Location = new Point(481, 406);
+            guna2Button1.Margin = new Padding(2, 2, 2, 2);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button1.Size = new Size(270, 68);
+            guna2Button1.Size = new Size(189, 41);
             guna2Button1.TabIndex = 11;
             guna2Button1.Text = "+ Item";
             guna2Button1.Click += guna2Button1_Click;
@@ -250,10 +261,11 @@
             guna2Button2.FillColor = Color.FromArgb(192, 192, 0);
             guna2Button2.Font = new Font("Segoe UI", 14F);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(411, 677);
+            guna2Button2.Location = new Point(288, 406);
+            guna2Button2.Margin = new Padding(2, 2, 2, 2);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button2.Size = new Size(270, 68);
+            guna2Button2.Size = new Size(189, 41);
             guna2Button2.TabIndex = 12;
             guna2Button2.Text = "Editar";
             guna2Button2.Click += guna2Button2_Click;
@@ -268,10 +280,11 @@
             guna2Button3.FillColor = Color.FromArgb(255, 128, 128);
             guna2Button3.Font = new Font("Segoe UI", 14F);
             guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(968, 677);
+            guna2Button3.Location = new Point(678, 406);
+            guna2Button3.Margin = new Padding(2, 2, 2, 2);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Button3.Size = new Size(270, 68);
+            guna2Button3.Size = new Size(189, 41);
             guna2Button3.TabIndex = 13;
             guna2Button3.Text = "Excluir";
             guna2Button3.Click += guna2Button3_Click;
@@ -279,16 +292,27 @@
             // CBgen
             // 
             CBgen.FormattingEnabled = true;
-            CBgen.Location = new Point(421, 112);
+            CBgen.Location = new Point(295, 67);
+            CBgen.Margin = new Padding(2, 2, 2, 2);
             CBgen.Name = "CBgen";
-            CBgen.Size = new Size(182, 33);
+            CBgen.Size = new Size(129, 23);
             CBgen.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-2, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(209, 120);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
             // 
             // FrmLivro
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1295, 773);
+            ClientSize = new Size(906, 464);
             Controls.Add(CBgen);
             Controls.Add(guna2Button3);
             Controls.Add(guna2Button2);
@@ -298,11 +322,13 @@
             Controls.Add(BtnFechar);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FrmLivro";
             Text = "FrmLivro";
             Load += FrmLivro_Load;
             guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -319,5 +345,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private ComboBox CBgen;
+        private PictureBox pictureBox1;
     }
 }
