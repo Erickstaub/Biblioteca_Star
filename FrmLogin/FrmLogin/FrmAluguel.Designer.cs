@@ -30,14 +30,14 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             TxtPesquisa = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -61,22 +61,6 @@
             TxtPesquisa.Size = new Size(290, 56);
             TxtPesquisa.TabIndex = 17;
             TxtPesquisa.TextChanged += TxtPesquisa_TextChanged;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.CustomizableEdges = customizableEdges3;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(0, 192, 0);
-            guna2Button1.Font = new Font("Segoe UI", 14F);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(12, 562);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button1.Size = new Size(270, 68);
-            guna2Button1.TabIndex = 16;
             // 
             // guna2DataGridView1
             // 
@@ -130,13 +114,31 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             guna2DataGridView1.CellClick += guna2DataGridView1_CellClick;
             // 
+            // BtnFechar
+            // 
+            BtnFechar.CustomizableEdges = customizableEdges3;
+            BtnFechar.DisabledState.BorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtnFechar.FillColor = Color.WhiteSmoke;
+            BtnFechar.Font = new Font("Segoe UI", 20F);
+            BtnFechar.ForeColor = Color.Black;
+            BtnFechar.Location = new Point(967, -2);
+            BtnFechar.Name = "BtnFechar";
+            BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            BtnFechar.Size = new Size(66, 68);
+            BtnFechar.TabIndex = 18;
+            BtnFechar.Text = "X";
+            BtnFechar.Click += BtnFechar_Click;
+            // 
             // FrmAluguel
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1035, 644);
+            Controls.Add(BtnFechar);
             Controls.Add(TxtPesquisa);
-            Controls.Add(guna2Button1);
             Controls.Add(guna2DataGridView1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmAluguel";
@@ -149,7 +151,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2TextBox TxtPesquisa;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2Button BtnFechar;
     }
 }

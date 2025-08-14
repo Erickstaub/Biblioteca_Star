@@ -18,9 +18,34 @@ namespace BibliotecaStar
 
     public partial class FrmLivroCad : Form
     {
+        livro? livroselec;
         public FrmLivroCad()
         {
             InitializeComponent();
+        }
+
+        public FrmLivroCad(livro livroselect)
+        {
+            livroselec = livroselect;
+            InitializeComponent();
+            CarregarDados();
+        }
+
+        private void CarregarDados()
+        {
+           using (var banco = new DBContext())
+            {
+                if (livroselec != null)
+                {
+                    TxtTitulo.Text = livroselec.titulo;
+                    TxtAutor.Text = livroselec.autor;
+                    TxtEditora.Text = livroselec.editora;
+                    TxtAno.Text = livroselec.ano_de_publicação.ToString("0");
+                    TxtQuant.Text = livroselec.quantidade.ToString("0");
+                    comboBox1.Text = livroselec.genero;
+                    TxtISBN.Text = livroselec.ISBN;
+                }
+            }
         }
 
         private void FrmLivroCad_Load(object sender, EventArgs e)
@@ -31,6 +56,13 @@ namespace BibliotecaStar
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            if (livroselec != null)
+            {
+                EditarLivro();
+            }
+            else
+            {
+               
             if (int.Parse(TxtQuant.Text) > 1)
             {
                 string opcoes = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -51,6 +83,38 @@ namespace BibliotecaStar
                 msg.Icon = MessageDialogIcon.Information;
                 msg.Show();
 
+            }
+            }
+        }
+
+        private void EditarLivro()
+        {
+           
+            using (var banco = new DBContext())
+            {
+                string titulo = TxtTitulo.Text;
+                string autor = TxtAutor.Text;
+                string editor = TxtEditora.Text;
+                int ano = int.Parse(TxtAno.Text);
+                int quant = int.Parse(TxtQuant.Text);
+                string gen = comboBox1.Text;
+                string ISBN = TxtISBN.Text;
+                livro livroEditado = banco.Livros.First(x => x.Id == livroselec.Id);
+                livroEditado.titulo = titulo;
+                livroEditado.autor = autor;
+                livroEditado.editora = editor;
+                livroEditado.ano_de_publicação = ano;
+                livroEditado.quantidade = quant;
+                livroEditado.ISBN = ISBN;
+                livroEditado.genero = gen;
+                banco.Livros.Update(livroEditado);
+                banco.SaveChanges();
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "Editado Com sucesso!";
+                msg.Caption = "Sucesso!";
+                msg.Icon = MessageDialogIcon.Information;
+                msg.Show();
+                this.Close();
             }
         }
 
@@ -94,6 +158,11 @@ namespace BibliotecaStar
         private void TxtTitulo_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -29,7 +29,7 @@ namespace BibliotecaStar
             TxtStatus.Text = _aluguel.status;
             TxtLivroId.Text = _aluguel.alunoID.ToString("0");
             TxtAlunoId.Text = _aluguel.livroID.ToString("0");
-            
+
         }
 
         private void LivroRenovado()
@@ -108,10 +108,10 @@ namespace BibliotecaStar
             msg.Icon = MessageDialogIcon.Information;
             msg.Show();
             this.Close();
-           
+
 
         }
-        
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.Text == "Renovado")
@@ -134,6 +134,11 @@ namespace BibliotecaStar
                 msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
             }
+        }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();  
         }
     }
 }

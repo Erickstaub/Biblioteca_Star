@@ -56,10 +56,37 @@ namespace BibliotecaStar
             if (e.RowIndex > 0)
             {
                 alunoselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as aluno;
-              //  btnEditar.Enabled = true;
+                //  btnEditar.Enabled = true;
                 //btnExcluir.Enabled = true;
                 string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-                
+
+            }
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            new FrmAlunoCad(alunoselec).ShowDialog();
+        }
+
+        private void BtnExcluir_Click(object sender, EventArgs e)
+        {
+            using (var banco = new DBContext())
+            {
+                if (alunoselec != null)
+                {
+                    banco.Alunos.Remove(alunoselec);
+                    banco.SaveChanges();
+                    BuscarAluno();
+                    var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                    msg.Text = "Aluno excluído com sucesso!";
+                    msg.Show();
+                }
+                else
+                {
+                    var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                    msg.Text = "Selecione um aluno para excluir!";
+                    msg.Show();
+                }
             }
         }
     }

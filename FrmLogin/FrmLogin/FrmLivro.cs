@@ -53,15 +53,56 @@ namespace BibliotecaStar
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             livroselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as livro;
+
+        }
+
+        private void guna2DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            livroselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as livro;
             string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-           int Lid = int.Parse((guna2DataGridView1.CurrentRow.Cells["id"].Value).ToString());
+            int Lid = int.Parse((guna2DataGridView1.CurrentRow.Cells["id"].Value).ToString());
             if (livroselec != null)
             {
-                
-            Memoria.LivroID = Lid;
+
+                Memoria.LivroID = Lid;
                 var usucad = new FrmLivroInf(livroselec);
-                usucad.ShowDialog();               
+                usucad.ShowDialog();
                 livroselec = null;
+            }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (livroselec != null)
+            {
+                var livcad = new FrmLivroCad(livroselec);
+                livcad.Show();
+                livroselec = null;
+            }
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            using(var bd = new DBContext())
+            {
+                if (livroselec != null)
+                {
+                    var confirmResult = MessageBox.Show("Tem certeza que deseja excluir este livro?",
+                        "Confirmação de Exclusão",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        bd.Livros.Remove(livroselec);
+                        bd.SaveChanges();
+                        BuscarLivro();
+                        livroselec = null;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum livro selecionado para exclusão.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

@@ -17,16 +17,16 @@ namespace FrmLogin
 
             if (loginValido)
             {
-                this.Hide(); 
+                this.Hide();
                 var frmp = new FrmPrincipal();
                 frmp.Show();
 
             }
         }
-             private bool ValidateLogin(string nome, string senha)
+        private bool ValidateLogin(string nome, string senha)
         {
             bool UsuarioValido = false;
-           int Uid = 0;
+            int Uid = 0;
             using (var banco = new DBContext())
             {
                 var usuario = banco.Alunos.FirstOrDefault(u => u.nome.ToLower().Equals(nome.ToLower()) && u.senha == senha);
@@ -40,7 +40,7 @@ namespace FrmLogin
 
             if (UsuarioValido)
             {
-              
+
                 return true;
             }
             else
@@ -54,6 +54,12 @@ namespace FrmLogin
 
             return false;
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            var criarconta = new FrmAlunoCad();
+            criarconta.ShowDialog();
+        }
     }
-    }
+}
 

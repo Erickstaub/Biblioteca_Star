@@ -32,6 +32,7 @@ namespace BibliotecaStar
                 TxtEditora.Text = _livros.editora;
                 TxtAno.Text = _livros.ano_de_publicação.ToString("0");
                 TxtGenero.Text = _livros.genero;
+           
 
 
             }
@@ -44,36 +45,56 @@ namespace BibliotecaStar
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             AlugarLivro();
-            var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
-            msg.Text = "Operação realizada com sucesso! Mais informações na aba de Alugueis";
-            msg.Caption = "Sucesso";
-            msg.Icon = MessageDialogIcon.Information;
-            msg.Show();
+           
         }
 
         private void AlugarLivro()
         {
-            using (var banco = new DBContext())
+            if (_livros.quantidade <= 0)
             {
-                string data_retirada = DateTime.Now.ToString("dd/MM/yyyy");
-                string data_devolucao = DateTime.Now.AddDays(7).ToString("dd/MM/yyyy");
-                string status = "Alugado";
-                int aluno_id = Memoria.UsuarioID;
-                int livro_id = Memoria.LivroID;
-
-                var livroalugado = new emprestimo()
-                {
-                    dataEmprestimo = data_retirada,
-                    dataDevolucao = data_devolucao,
-                    status = status,
-                    alunoID = aluno_id,
-                    livroID = livro_id
-
-                };
-                banco.Emprestimos.Add(livroalugado);
-                banco.SaveChanges();
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "Livro indisponível para aluguel!";
+                msg.Caption = "Erro";
+                msg.Icon = MessageDialogIcon.Error;
+                msg.Show();
+                return;
 
             }
+            else
+            {
+                using (var banco = new DBContext())
+                {
+                    string data_retirada = DateTime.Now.ToString("dd/MM/yyyy");
+                    string data_devolucao = DateTime.Now.AddDays(7).ToString("dd/MM/yyyy");
+                    string status = "Alugado";
+                    int aluno_id = Memoria.UsuarioID;
+                    int livro_id = Memoria.LivroID;
+
+                    var livroalugado = new emprestimo()
+                    {
+                        dataEmprestimo = data_retirada,
+                        dataDevolucao = data_devolucao,
+                        status = status,
+                        alunoID = aluno_id,
+                        livroID = livro_id
+
+                    };
+                    banco.Emprestimos.Add(livroalugado);
+                    _livros.quantidade = _livros.quantidade - 1;
+                    banco.SaveChanges();
+                    var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                    msg.Text = "Operação realizada com sucesso! Mais informações na aba de Alugueis";
+                    msg.Caption = "Sucesso";
+                    msg.Icon = MessageDialogIcon.Information;
+                    msg.Show();
+                    this.Close();
+                }
+            }
+        }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

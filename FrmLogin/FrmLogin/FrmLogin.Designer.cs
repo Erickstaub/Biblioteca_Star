@@ -87,6 +87,7 @@
             guna2Button2.Size = new Size(231, 36);
             guna2Button2.TabIndex = 3;
             guna2Button2.Text = "Criar Conta";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2TextBox2
             // 

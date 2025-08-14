@@ -30,6 +30,8 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             TxtTitulo = new Label();
             TxtAutor = new Label();
             TxtEditora = new Label();
@@ -42,6 +44,7 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // TxtTitulo
@@ -161,11 +164,30 @@
             label6.TabIndex = 19;
             label6.Text = "15 R$";
             // 
+            // BtnFechar
+            // 
+            BtnFechar.CustomizableEdges = customizableEdges3;
+            BtnFechar.DisabledState.BorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtnFechar.FillColor = Color.WhiteSmoke;
+            BtnFechar.Font = new Font("Segoe UI", 20F);
+            BtnFechar.ForeColor = Color.Black;
+            BtnFechar.Location = new Point(583, -1);
+            BtnFechar.Name = "BtnFechar";
+            BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            BtnFechar.Size = new Size(66, 68);
+            BtnFechar.TabIndex = 20;
+            BtnFechar.Text = "X";
+            BtnFechar.Click += BtnFechar_Click;
+            // 
             // FrmLivroInf
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(646, 673);
+            Controls.Add(BtnFechar);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -199,5 +221,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Guna.UI2.WinForms.Guna2Button BtnFechar;
     }
 }

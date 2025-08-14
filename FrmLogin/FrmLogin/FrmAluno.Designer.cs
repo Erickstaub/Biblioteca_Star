@@ -35,9 +35,15 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             TxtPesquisa = new Guna.UI2.WinForms.Guna2TextBox();
+            BtnEditar = new Guna.UI2.WinForms.Guna2Button();
+            BtnExcluir = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -132,11 +138,49 @@
             TxtPesquisa.TabIndex = 14;
             TxtPesquisa.TextChanged += TxtPesquisa_TextChanged;
             // 
+            // BtnEditar
+            // 
+            BtnEditar.CustomizableEdges = customizableEdges5;
+            BtnEditar.DisabledState.BorderColor = Color.DarkGray;
+            BtnEditar.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtnEditar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtnEditar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtnEditar.FillColor = Color.FromArgb(0, 192, 0);
+            BtnEditar.Font = new Font("Segoe UI", 14F);
+            BtnEditar.ForeColor = Color.White;
+            BtnEditar.Location = new Point(1063, 440);
+            BtnEditar.Name = "BtnEditar";
+            BtnEditar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            BtnEditar.Size = new Size(270, 68);
+            BtnEditar.TabIndex = 15;
+            BtnEditar.Text = "+ Item";
+            BtnEditar.Click += BtnEditar_Click;
+            // 
+            // BtnExcluir
+            // 
+            BtnExcluir.CustomizableEdges = customizableEdges7;
+            BtnExcluir.DisabledState.BorderColor = Color.DarkGray;
+            BtnExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtnExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtnExcluir.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtnExcluir.FillColor = Color.FromArgb(0, 192, 0);
+            BtnExcluir.Font = new Font("Segoe UI", 14F);
+            BtnExcluir.ForeColor = Color.White;
+            BtnExcluir.Location = new Point(1063, 532);
+            BtnExcluir.Name = "BtnExcluir";
+            BtnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            BtnExcluir.Size = new Size(270, 68);
+            BtnExcluir.TabIndex = 16;
+            BtnExcluir.Text = "+ Item";
+            BtnExcluir.Click += BtnExcluir_Click;
+            // 
             // FrmAluno
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1383, 640);
+            Controls.Add(BtnExcluir);
+            Controls.Add(BtnEditar);
             Controls.Add(TxtPesquisa);
             Controls.Add(guna2Button1);
             Controls.Add(guna2DataGridView1);
@@ -153,5 +197,7 @@
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox TxtPesquisa;
+        private Guna.UI2.WinForms.Guna2Button BtnEditar;
+        private Guna.UI2.WinForms.Guna2Button BtnExcluir;
     }
 }
