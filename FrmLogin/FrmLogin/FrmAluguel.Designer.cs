@@ -33,12 +33,18 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAluguel));
             TxtPesquisa = new Guna.UI2.WinForms.Guna2TextBox();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
+            guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            guna2GroupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // TxtPesquisa
@@ -52,7 +58,7 @@
             TxtPesquisa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtPesquisa.Font = new Font("Segoe UI", 9F);
             TxtPesquisa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtPesquisa.Location = new Point(670, 45);
+            TxtPesquisa.Location = new Point(12, 49);
             TxtPesquisa.Margin = new Padding(4, 5, 4, 5);
             TxtPesquisa.Name = "TxtPesquisa";
             TxtPesquisa.PlaceholderText = "";
@@ -66,6 +72,8 @@
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
             guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            guna2DataGridView1.BackgroundColor = Color.WhiteSmoke;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -74,36 +82,44 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeight = 4;
+            guna2DataGridView1.ColumnHeadersHeight = 32;
             guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.ForeColor = Color.White;
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(12, 109);
+            guna2DataGridView1.GridColor = Color.White;
+            guna2DataGridView1.Location = new Point(12, 113);
             guna2DataGridView1.Name = "guna2DataGridView1";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 62;
-            guna2DataGridView1.Size = new Size(948, 438);
+            guna2DataGridView1.Size = new Size(903, 438);
             guna2DataGridView1.TabIndex = 15;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView1.ThemeStyle.BackColor = Color.WhiteSmoke;
+            guna2DataGridView1.ThemeStyle.GridColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
             guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 32;
             guna2DataGridView1.ThemeStyle.ReadOnly = false;
             guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -121,10 +137,10 @@
             BtnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnFechar.FillColor = Color.WhiteSmoke;
+            BtnFechar.FillColor = Color.White;
             BtnFechar.Font = new Font("Segoe UI", 20F);
             BtnFechar.ForeColor = Color.Black;
-            BtnFechar.Location = new Point(967, -2);
+            BtnFechar.Location = new Point(839, 14);
             BtnFechar.Name = "BtnFechar";
             BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges4;
             BtnFechar.Size = new Size(66, 68);
@@ -132,19 +148,38 @@
             BtnFechar.Text = "X";
             BtnFechar.Click += BtnFechar_Click;
             // 
+            // guna2GroupBox1
+            // 
+            guna2GroupBox1.BackColor = Color.FromArgb(128, 128, 255);
+            guna2GroupBox1.BorderColor = Color.White;
+            guna2GroupBox1.BorderRadius = 50;
+            guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(BtnFechar);
+            guna2GroupBox1.Controls.Add(guna2DataGridView1);
+            guna2GroupBox1.Controls.Add(TxtPesquisa);
+            guna2GroupBox1.CustomBorderColor = Color.Transparent;
+            guna2GroupBox1.CustomizableEdges = customizableEdges5;
+            guna2GroupBox1.Font = new Font("Segoe UI", 9F);
+            guna2GroupBox1.ForeColor = Color.White;
+            guna2GroupBox1.Location = new Point(52, 19);
+            guna2GroupBox1.Name = "guna2GroupBox1";
+            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2GroupBox1.Size = new Size(925, 606);
+            guna2GroupBox1.TabIndex = 19;
+            // 
             // FrmAluguel
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1035, 644);
-            Controls.Add(BtnFechar);
-            Controls.Add(TxtPesquisa);
-            Controls.Add(guna2DataGridView1);
+            Controls.Add(guna2GroupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmAluguel";
             Text = "FrmAluguel";
             Load += FrmAluguel_Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            guna2GroupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -153,5 +188,6 @@
         private Guna.UI2.WinForms.Guna2TextBox TxtPesquisa;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Button BtnFechar;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
     }
 }
