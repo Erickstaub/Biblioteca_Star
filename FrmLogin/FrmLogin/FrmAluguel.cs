@@ -22,6 +22,10 @@ namespace BibliotecaStar
         private void FrmAluguel_Load(object sender, EventArgs e)
         {
             BuscarEmprestimos();
+            guna2DataGridView1.BackgroundColor = Color.White;
+            guna2DataGridView1.DefaultCellStyle.BackColor = Color.White;
+            guna2DataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            guna2DataGridView1.EnableHeadersVisualStyles = false;
         }
 
         private void BuscarEmprestimos()

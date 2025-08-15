@@ -43,8 +43,11 @@
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // TxtPesquisa
@@ -58,7 +61,7 @@
             TxtPesquisa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtPesquisa.Font = new Font("Segoe UI", 9F);
             TxtPesquisa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtPesquisa.Location = new Point(12, 49);
+            TxtPesquisa.Location = new Point(625, 85);
             TxtPesquisa.Margin = new Padding(4, 5, 4, 5);
             TxtPesquisa.Name = "TxtPesquisa";
             TxtPesquisa.PlaceholderText = "";
@@ -70,6 +73,8 @@
             // 
             // guna2DataGridView1
             // 
+            guna2DataGridView1.AllowUserToAddRows = false;
+            guna2DataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
             guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
@@ -93,8 +98,9 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.White;
-            guna2DataGridView1.Location = new Point(12, 113);
+            guna2DataGridView1.Location = new Point(12, 144);
             guna2DataGridView1.Name = "guna2DataGridView1";
+            guna2DataGridView1.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = SystemColors.Control;
             dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
@@ -105,7 +111,7 @@
             guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 62;
-            guna2DataGridView1.Size = new Size(903, 438);
+            guna2DataGridView1.Size = new Size(903, 407);
             guna2DataGridView1.TabIndex = 15;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -120,7 +126,7 @@
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 32;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            guna2DataGridView1.ThemeStyle.ReadOnly = true;
             guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
@@ -154,6 +160,8 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(pictureBox1);
+            guna2GroupBox1.Controls.Add(label1);
             guna2GroupBox1.Controls.Add(BtnFechar);
             guna2GroupBox1.Controls.Add(guna2DataGridView1);
             guna2GroupBox1.Controls.Add(TxtPesquisa);
@@ -166,6 +174,30 @@
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2GroupBox1.Size = new Size(925, 606);
             guna2GroupBox1.TabIndex = 19;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.White;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(23, 14);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(101, 93);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(565, 87);
+            label1.Name = "label1";
+            label1.Size = new Size(53, 54);
+            label1.TabIndex = 19;
+            label1.Text = "⌕";
             // 
             // FrmAluguel
             // 
@@ -180,6 +212,8 @@
             Load += FrmAluguel_Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             guna2GroupBox1.ResumeLayout(false);
+            guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -189,5 +223,7 @@
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Button BtnFechar;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Label label1;
+        private PictureBox pictureBox1;
     }
 }
