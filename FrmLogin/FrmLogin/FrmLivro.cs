@@ -32,8 +32,8 @@ namespace BibliotecaStar
                 if (!string.IsNullOrEmpty(TxtPesquisa.Text))
                 {
                     livros = livros.Where(c => c.titulo.Contains(TxtPesquisa.Text) ||
-                                                c.autor.Contains(TxtPesquisa.Text) ||
-                                                c.genero.Contains(CBgen.Text));
+                                                c.autor.Contains(TxtPesquisa.Text)
+                                                );
                 }
                 guna2DataGridView1.DataSource = livros.ToList();
             }
@@ -83,7 +83,7 @@ namespace BibliotecaStar
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            using(var bd = new DBContext())
+            using (var bd = new DBContext())
             {
                 if (livroselec != null)
                 {
@@ -104,6 +104,11 @@ namespace BibliotecaStar
                     MessageBox.Show("Nenhum livro selecionado para exclusão.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
