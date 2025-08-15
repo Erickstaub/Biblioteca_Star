@@ -70,11 +70,11 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(27, 104);
+            guna2DataGridView1.Location = new Point(163, 115);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 62;
-            guna2DataGridView1.Size = new Size(948, 438);
+            guna2DataGridView1.Size = new Size(1170, 373);
             guna2DataGridView1.TabIndex = 10;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -106,15 +106,15 @@
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(0, 192, 0);
+            guna2Button1.FillColor = Color.Lime;
             guna2Button1.Font = new Font("Segoe UI", 14F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(27, 557);
+            guna2Button1.Location = new Point(755, 532);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button1.Size = new Size(270, 68);
             guna2Button1.TabIndex = 13;
-            guna2Button1.Text = "+ Item";
+            guna2Button1.Text = "+ Adicionar";
             guna2Button1.Click += guna2Button1_Click;
             // 
             // TxtPesquisa
@@ -128,13 +128,13 @@
             TxtPesquisa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtPesquisa.Font = new Font("Segoe UI", 9F);
             TxtPesquisa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtPesquisa.Location = new Point(685, 40);
+            TxtPesquisa.Location = new Point(460, 50);
             TxtPesquisa.Margin = new Padding(4, 5, 4, 5);
             TxtPesquisa.Name = "TxtPesquisa";
             TxtPesquisa.PlaceholderText = "";
             TxtPesquisa.SelectedText = "";
             TxtPesquisa.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            TxtPesquisa.Size = new Size(290, 56);
+            TxtPesquisa.Size = new Size(873, 57);
             TxtPesquisa.TabIndex = 14;
             TxtPesquisa.TextChanged += TxtPesquisa_TextChanged;
             // 
@@ -145,15 +145,15 @@
             BtnEditar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnEditar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnEditar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnEditar.FillColor = Color.FromArgb(0, 192, 0);
+            BtnEditar.FillColor = Color.Gold;
             BtnEditar.Font = new Font("Segoe UI", 14F);
             BtnEditar.ForeColor = Color.White;
-            BtnEditar.Location = new Point(1063, 440);
+            BtnEditar.Location = new Point(163, 532);
             BtnEditar.Name = "BtnEditar";
             BtnEditar.ShadowDecoration.CustomizableEdges = customizableEdges6;
             BtnEditar.Size = new Size(270, 68);
             BtnEditar.TabIndex = 15;
-            BtnEditar.Text = "+ Item";
+            BtnEditar.Text = "+ Editar";
             BtnEditar.Click += BtnEditar_Click;
             // 
             // BtnExcluir
@@ -163,7 +163,7 @@
             BtnExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnExcluir.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnExcluir.FillColor = Color.FromArgb(0, 192, 0);
+            BtnExcluir.FillColor = Color.Red;
             BtnExcluir.Font = new Font("Segoe UI", 14F);
             BtnExcluir.ForeColor = Color.White;
             BtnExcluir.Location = new Point(1063, 532);
@@ -171,7 +171,7 @@
             BtnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges8;
             BtnExcluir.Size = new Size(270, 68);
             BtnExcluir.TabIndex = 16;
-            BtnExcluir.Text = "+ Item";
+            BtnExcluir.Text = "Excluir";
             BtnExcluir.Click += BtnExcluir_Click;
             // 
             // FrmAluno
