@@ -37,16 +37,24 @@ namespace BibliotecaStar
             {
                 EditarAluno();
             }
+            else if (TxtNome.Text == "" || TxtSenha.Text == "" || TxtConfSenha.Text == "" || TxtEmail.Text == "" || TxtIdade.Text == "" || TxtTurma.Text == "")
+            {
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "Preencha todos os campos!";
+                msg.Caption = "Erro";
+                msg.Icon = MessageDialogIcon.Error;
+                msg.Show();
+            }
             else
             {
-               
-            InserirAluno();
+
+                InserirAluno();
             }
         }
 
         private void EditarAluno()
         {
-          using(var banco = new DBContext())
+            using (var banco = new DBContext())
             {
                 _alunoselec.nome = TxtNome.Text;
                 _alunoselec.senha = TxtSenha.Text;
@@ -73,7 +81,7 @@ namespace BibliotecaStar
                 string email = TxtEmail.Text;
                 int idade = int.Parse(TxtIdade.Text);
                 string turma = TxtTurma.Text;
-               
+
 
                 var alunonovo = new aluno()
                 {
@@ -96,6 +104,39 @@ namespace BibliotecaStar
             msg.Show();
             this.Close();
 
+        }
+
+        private void TxtConfSenha_Leave(object sender, EventArgs e)
+        {
+            if (TxtSenha.Text != TxtConfSenha.Text)
+            {
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "As senhas são diferentes!";
+                msg.Caption = "Erro";
+                msg.Icon = MessageDialogIcon.Error;
+                msg.Show();
+                TxtConfSenha.Focus();
+                guna2Button1.Enabled = false;
+
+            }
+            else
+            {
+                guna2Button1.Enabled = true;
+            }
+        }
+
+        private void TxtSenha_Leave(object sender, EventArgs e)
+        {
+            if(TxtSenha.Text.Length < 6)
+            {
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "A senha deve ter pelo menos 6 caracteres!";
+                msg.Caption = "Erro";
+                msg.Icon = MessageDialogIcon.Error;
+                msg.Show();
+                TxtSenha.Focus();
+                guna2Button1.Enabled = false;
+            }
         }
     }
 }
