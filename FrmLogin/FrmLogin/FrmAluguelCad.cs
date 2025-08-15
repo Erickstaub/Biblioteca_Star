@@ -108,6 +108,16 @@ namespace BibliotecaStar
             msg.Icon = MessageDialogIcon.Information;
             msg.Show();
             this.Close();
+            using(var banco = new DBContext())
+            {
+                var livro = banco.Livros.FirstOrDefault(x => x.Id == _aluguel.livroID);
+                if (livro != null)
+                {
+                    livro.quantidade += 1; 
+                    banco.Livros.Update(livro);
+                    banco.SaveChanges();
+                }
+            }
 
 
         }
@@ -118,7 +128,7 @@ namespace BibliotecaStar
             {
                 LivroRenovado();
             }
-            else if (comboBox1.Text == "Pendente")
+            else if (comboBox1.Text == "Atrasado")
             {
                 LivroPendente();
             }
