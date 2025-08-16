@@ -37,7 +37,7 @@ namespace BibliotecaStar
             using (var banco = new DBContext())
             {
                 string data1 = TxtData1.Text;
-                string data2 = DateTime.Now.AddDays(7).ToString("dd/MM/yyyy"); ;
+                string data2 = DateTime.Parse(TxtData2.Text).AddDays(7).ToString("dd/MM/yyyy"); ;
                 string status = comboBox1.Text;
                 int idalu = int.Parse(TxtAlunoId.Text);
                 int idliv = int.Parse(TxtLivroId.Text);
@@ -108,12 +108,12 @@ namespace BibliotecaStar
             msg.Icon = MessageDialogIcon.Information;
             msg.Show();
             this.Close();
-            using(var banco = new DBContext())
+            using (var banco = new DBContext())
             {
                 var livro = banco.Livros.FirstOrDefault(x => x.Id == _aluguel.livroID);
                 if (livro != null)
                 {
-                    livro.quantidade += 1; 
+                    livro.quantidade += 1;
                     banco.Livros.Update(livro);
                     banco.SaveChanges();
                 }
@@ -124,31 +124,57 @@ namespace BibliotecaStar
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Renovado")
-            {
-                LivroRenovado();
-            }
-            else if (comboBox1.Text == "Atrasado")
-            {
-                LivroPendente();
-            }
-            else if (comboBox1.Text == "Entregue")
-            {
-                LivroEntregue();
-            }
-            else
+            if (comboBox1.Text == "Novo Status")
             {
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
-                msg.Text = "Selecione uma opção válida!";
+                msg.Text = "Selecione um novo status!";
                 msg.Caption = "Erro";
                 msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
+                return;
+            }
+            else
+            {
+                if (comboBox1.Text == "Renovado")
+                {
+                    LivroRenovado();
+                }
+                else if (comboBox1.Text == "Atrasado")
+                {
+                    LivroPendente();
+                }
+                else if (comboBox1.Text == "Entregue")
+                {
+                    LivroEntregue();
+                }
+                else
+                {
+                    var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                    msg.Text = "Selecione uma opção válida!";
+                    msg.Caption = "Erro";
+                    msg.Icon = MessageDialogIcon.Error;
+                    msg.Show();
+                }
             }
         }
 
         private void BtnFechar_Click(object sender, EventArgs e)
         {
-            this.Close();  
+            this.Close();
+        }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_Enter(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Novo Status")
+            {
+                comboBox1.Text = null;
+            }
+           
         }
     }
 }
