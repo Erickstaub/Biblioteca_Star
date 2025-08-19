@@ -30,11 +30,11 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLivroInf));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLivroInf));
             TxtTitulo = new Label();
             TxtAutor = new Label();
             TxtEditora = new Label();
@@ -104,9 +104,9 @@
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.Yellow;
+            guna2Button1.FillColor = Color.Gold;
             guna2Button1.Font = new Font("Segoe UI", 14F);
-            guna2Button1.ForeColor = Color.White;
+            guna2Button1.ForeColor = Color.Black;
             guna2Button1.Location = new Point(56, 417);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -163,20 +163,25 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Gold;
+            label6.Font = new Font("Segoe UI", 12F);
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(160, 373);
             label6.Name = "label6";
-            label6.Size = new Size(58, 25);
+            label6.Size = new Size(74, 32);
             label6.TabIndex = 19;
             label6.Text = "15 R$";
             // 
             // BtnFechar
             // 
+            BtnFechar.BackColor = Color.Transparent;
+            BtnFechar.BackgroundImage = (Image)resources.GetObject("BtnFechar.BackgroundImage");
             BtnFechar.CustomizableEdges = customizableEdges3;
             BtnFechar.DisabledState.BorderColor = Color.DarkGray;
             BtnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnFechar.FillColor = Color.WhiteSmoke;
+            BtnFechar.FillColor = Color.Transparent;
             BtnFechar.Font = new Font("Segoe UI", 20F);
             BtnFechar.ForeColor = Color.Black;
             BtnFechar.Location = new Point(583, -1);

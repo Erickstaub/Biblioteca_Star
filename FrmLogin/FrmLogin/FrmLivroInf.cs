@@ -32,7 +32,7 @@ namespace BibliotecaStar
                 TxtEditora.Text = _livros.editora;
                 TxtAno.Text = _livros.ano_de_publicação.ToString("0");
                 TxtGenero.Text = _livros.genero;
-           
+
 
 
             }
@@ -45,7 +45,7 @@ namespace BibliotecaStar
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             AlugarLivro();
-           
+
         }
 
         private void AlugarLivro()
@@ -95,6 +95,11 @@ namespace BibliotecaStar
         private void BtnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
