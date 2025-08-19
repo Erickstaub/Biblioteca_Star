@@ -40,11 +40,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAlunoCad));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             TxtSenha = new Guna.UI2.WinForms.Guna2TextBox();
             TxtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,13 +54,14 @@
             TxtIdade = new Guna.UI2.WinForms.Guna2TextBox();
             TxtNome = new Guna.UI2.WinForms.Guna2TextBox();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            BtnFechar = new Guna.UI2.WinForms.Guna2Button();
+            pictureBox2 = new PictureBox();
             label1 = new Label();
             TxtConfSenha = new Guna.UI2.WinForms.Guna2TextBox();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // guna2Button1
@@ -217,6 +220,7 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(BtnFechar);
             guna2GroupBox1.Controls.Add(pictureBox2);
             guna2GroupBox1.Controls.Add(label1);
             guna2GroupBox1.Controls.Add(TxtTurma);
@@ -227,14 +231,46 @@
             guna2GroupBox1.Controls.Add(TxtIdade);
             guna2GroupBox1.Controls.Add(TxtNome);
             guna2GroupBox1.CustomBorderColor = Color.Transparent;
-            guna2GroupBox1.CustomizableEdges = customizableEdges15;
+            guna2GroupBox1.CustomizableEdges = customizableEdges17;
             guna2GroupBox1.Font = new Font("Segoe UI", 9F);
             guna2GroupBox1.ForeColor = Color.White;
             guna2GroupBox1.Location = new Point(36, 30);
             guna2GroupBox1.Name = "guna2GroupBox1";
-            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2GroupBox1.Size = new Size(719, 618);
             guna2GroupBox1.TabIndex = 23;
+            // 
+            // BtnFechar
+            // 
+            BtnFechar.BackColor = Color.Transparent;
+            BtnFechar.BorderColor = Color.Transparent;
+            BtnFechar.CustomizableEdges = customizableEdges13;
+            BtnFechar.DisabledState.BorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtnFechar.FillColor = Color.Transparent;
+            BtnFechar.Font = new Font("Segoe UI", 23F);
+            BtnFechar.ForeColor = Color.Black;
+            BtnFechar.Location = new Point(631, 0);
+            BtnFechar.Name = "BtnFechar";
+            BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            BtnFechar.Size = new Size(88, 80);
+            BtnFechar.TabIndex = 25;
+            BtnFechar.Text = "X";
+            BtnFechar.Click += BtnFechar_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(101, 93);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -253,7 +289,7 @@
             TxtConfSenha.BackColor = Color.Transparent;
             TxtConfSenha.BorderColor = Color.Gray;
             TxtConfSenha.BorderRadius = 15;
-            TxtConfSenha.CustomizableEdges = customizableEdges13;
+            TxtConfSenha.CustomizableEdges = customizableEdges15;
             TxtConfSenha.DefaultText = "";
             TxtConfSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtConfSenha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -270,7 +306,7 @@
             TxtConfSenha.PlaceholderForeColor = Color.Black;
             TxtConfSenha.PlaceholderText = "Confirmar Senha";
             TxtConfSenha.SelectedText = "";
-            TxtConfSenha.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            TxtConfSenha.ShadowDecoration.CustomizableEdges = customizableEdges16;
             TxtConfSenha.Size = new Size(566, 50);
             TxtConfSenha.TabIndex = 20;
             TxtConfSenha.Leave += TxtConfSenha_Leave;
@@ -285,18 +321,6 @@
             pictureBox1.TabIndex = 24;
             pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(101, 93);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 25;
-            pictureBox2.TabStop = false;
-            // 
             // FrmAlunoCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -309,8 +333,8 @@
             Text = "FrmAlunoCad";
             guna2GroupBox1.ResumeLayout(false);
             guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -326,5 +350,6 @@
         private PictureBox pictureBox1;
         private Label label1;
         private PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2Button BtnFechar;
     }
 }

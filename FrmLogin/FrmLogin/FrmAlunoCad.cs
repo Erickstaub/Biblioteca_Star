@@ -127,7 +127,7 @@ namespace BibliotecaStar
 
         private void TxtSenha_Leave(object sender, EventArgs e)
         {
-            if(TxtSenha.Text.Length < 6)
+            if (TxtSenha.Text.Length < 6)
             {
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
                 msg.Text = "A senha deve ter pelo menos 6 caracteres!";
@@ -137,6 +137,11 @@ namespace BibliotecaStar
                 TxtSenha.Focus();
                 guna2Button1.Enabled = false;
             }
+        }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
