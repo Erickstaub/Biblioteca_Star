@@ -56,34 +56,31 @@ namespace BibliotecaStar
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (livroselec != null)
-            {
-                EditarLivro();
-            }
-            else
-            {
-               
-            if (int.Parse(TxtQuant.Text) > 1)
-            {
-                string opcoes = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                Random ran = new Random();
-                string isbn = "";
-
-                for (int i = 0; i < 13; i++)
-                    isbn += opcoes[ran.Next(opcoes.Length)];
-
-                TxtISBN.Text = isbn;
-                InserirLivro();
-            }
-            else
+            if (string.IsNullOrWhiteSpace(TxtTitulo.Text) || string.IsNullOrWhiteSpace(TxtAutor.Text) || string.IsNullOrWhiteSpace(TxtEditora.Text) || string.IsNullOrWhiteSpace(TxtAno.Text) || string.IsNullOrWhiteSpace(TxtQuant.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || int.Parse(TxtQuant.Text) < 1)
             {
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
-                msg.Text = "Ocorreu um erro!";
+                msg.Text = "Preencha todos os campos corretamente!";
                 msg.Caption = "Erro!";
-                msg.Icon = MessageDialogIcon.Information;
+                msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
-
+                return;
             }
+            else
+            {
+                if (livroselec != null)
+                {
+                    EditarLivro();
+                }
+                else
+                {
+                        string opcoes = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                        Random ran = new Random();
+                        string isbn = "";
+                        for (int i = 0; i < 13; i++)
+                            isbn += opcoes[ran.Next(opcoes.Length)];
+                        TxtISBN.Text = isbn;
+                        InserirLivro();
+                }
             }
         }
 

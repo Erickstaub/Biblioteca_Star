@@ -55,8 +55,10 @@
             label1 = new Label();
             TxtConfSenha = new Guna.UI2.WinForms.Guna2TextBox();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // guna2Button1
@@ -215,6 +217,7 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(pictureBox2);
             guna2GroupBox1.Controls.Add(label1);
             guna2GroupBox1.Controls.Add(TxtTurma);
             guna2GroupBox1.Controls.Add(TxtConfSenha);
@@ -282,6 +285,18 @@
             pictureBox1.TabIndex = 24;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(101, 93);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
+            // 
             // FrmAlunoCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -295,6 +310,7 @@
             guna2GroupBox1.ResumeLayout(false);
             guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -309,5 +325,6 @@
         private Guna.UI2.WinForms.Guna2TextBox TxtConfSenha;
         private PictureBox pictureBox1;
         private Label label1;
+        private PictureBox pictureBox2;
     }
 }
