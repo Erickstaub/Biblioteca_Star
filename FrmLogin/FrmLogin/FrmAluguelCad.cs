@@ -73,6 +73,7 @@ namespace BibliotecaStar
                 aluguel.status = status;
                 aluguel.alunoID = idalu;
                 aluguel.livroID = idliv;
+                aluguel.multa = 10;
                 banco.Emprestimos.Update(aluguel);
                 banco.SaveChanges();
             }

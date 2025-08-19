@@ -19,5 +19,6 @@ namespace FrmLogin
         public string status { get; set; }
         public int alunoID { get; set; }
         public int livroID { get; set; }
+        public int multa { get; set; }
     }
 }
