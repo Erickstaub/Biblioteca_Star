@@ -30,11 +30,11 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLivroInf));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLivroInf));
             TxtTitulo = new Label();
             TxtAutor = new Label();
             TxtEditora = new Label();
@@ -49,7 +49,9 @@
             label6 = new Label();
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            pictureBox1 = new PictureBox();
             guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // TxtTitulo
@@ -175,7 +177,7 @@
             // BtnFechar
             // 
             BtnFechar.BackColor = Color.Transparent;
-            BtnFechar.BackgroundImage = (Image)resources.GetObject("BtnFechar.BackgroundImage");
+            BtnFechar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             BtnFechar.CustomizableEdges = customizableEdges3;
             BtnFechar.DisabledState.BorderColor = Color.DarkGray;
             BtnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -184,10 +186,10 @@
             BtnFechar.FillColor = Color.Transparent;
             BtnFechar.Font = new Font("Segoe UI", 20F);
             BtnFechar.ForeColor = Color.Black;
-            BtnFechar.Location = new Point(583, -1);
+            BtnFechar.Location = new Point(312, 0);
             BtnFechar.Name = "BtnFechar";
             BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            BtnFechar.Size = new Size(66, 68);
+            BtnFechar.Size = new Size(82, 75);
             BtnFechar.TabIndex = 20;
             BtnFechar.Text = "X";
             BtnFechar.Click += BtnFechar_Click;
@@ -198,6 +200,7 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(BtnFechar);
             guna2GroupBox1.Controls.Add(guna2Button1);
             guna2GroupBox1.Controls.Add(label6);
             guna2GroupBox1.CustomBorderColor = Color.Transparent;
@@ -210,13 +213,20 @@
             guna2GroupBox1.Size = new Size(394, 508);
             guna2GroupBox1.TabIndex = 24;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(649, 673);
+            pictureBox1.TabIndex = 25;
+            pictureBox1.TabStop = false;
+            // 
             // FrmLivroInf
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(646, 673);
-            Controls.Add(BtnFechar);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -228,11 +238,13 @@
             Controls.Add(TxtAutor);
             Controls.Add(TxtTitulo);
             Controls.Add(guna2GroupBox1);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmLivroInf";
             Text = "FrmLivroInf";
             guna2GroupBox1.ResumeLayout(false);
             guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -253,5 +265,6 @@
         private Label label6;
         private Guna.UI2.WinForms.Guna2Button BtnFechar;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private PictureBox pictureBox1;
     }
 }
