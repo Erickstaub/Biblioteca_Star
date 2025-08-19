@@ -9,6 +9,8 @@ namespace BibliotecaStar
     public static class Memoria
     {
         public static int UsuarioID { get; set; }
+      
         public static int LivroID { get; set; }
+   
     }
 }

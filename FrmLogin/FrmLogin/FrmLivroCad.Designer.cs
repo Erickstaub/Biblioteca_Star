@@ -57,8 +57,8 @@
             comboBox1 = new ComboBox();
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            label1 = new Label();
             pictureBox2 = new PictureBox();
+            label1 = new Label();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -295,18 +295,6 @@
             guna2GroupBox1.Size = new Size(719, 618);
             guna2GroupBox1.TabIndex = 24;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Century Gothic", 30F);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(122, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(473, 74);
-            label1.TabIndex = 22;
-            label1.Text = "Cadastrar Livro";
-            // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
@@ -318,6 +306,18 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 23;
             pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Century Gothic", 30F);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(122, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(473, 74);
+            label1.TabIndex = 22;
+            label1.Text = "Cadastrar Livro";
             // 
             // FrmLivroCad
             // 

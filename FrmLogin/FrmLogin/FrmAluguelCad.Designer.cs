@@ -60,6 +60,7 @@
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             pictureBox2 = new PictureBox();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -316,6 +317,7 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(label6);
             guna2GroupBox1.Controls.Add(BtnFechar);
             guna2GroupBox1.Controls.Add(TxtLivroId);
             guna2GroupBox1.Controls.Add(pictureBox2);
@@ -371,6 +373,18 @@
             guna2Button2.TabIndex = 18;
             guna2Button2.Text = "X";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Century Gothic", 30F);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(163, 13);
+            label6.Name = "label6";
+            label6.Size = new Size(252, 74);
+            label6.TabIndex = 38;
+            label6.Text = "Aluguel";
+            // 
             // FrmAluguelCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -409,5 +423,6 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Label label6;
     }
 }
