@@ -32,6 +32,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLivroInf));
             TxtTitulo = new Label();
             TxtAutor = new Label();
             TxtEditora = new Label();
@@ -45,6 +48,8 @@
             label5 = new Label();
             label6 = new Label();
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
+            guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            guna2GroupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // TxtTitulo
@@ -102,7 +107,7 @@
             guna2Button1.FillColor = Color.Yellow;
             guna2Button1.Font = new Font("Segoe UI", 14F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(364, 593);
+            guna2Button1.Location = new Point(56, 417);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button1.Size = new Size(270, 68);
@@ -158,7 +163,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(463, 565);
+            label6.Location = new Point(160, 373);
             label6.Name = "label6";
             label6.Size = new Size(58, 25);
             label6.TabIndex = 19;
@@ -182,27 +187,47 @@
             BtnFechar.Text = "X";
             BtnFechar.Click += BtnFechar_Click;
             // 
+            // guna2GroupBox1
+            // 
+            guna2GroupBox1.BackColor = Color.FromArgb(128, 128, 255);
+            guna2GroupBox1.BorderColor = Color.White;
+            guna2GroupBox1.BorderRadius = 50;
+            guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(guna2Button1);
+            guna2GroupBox1.Controls.Add(label6);
+            guna2GroupBox1.CustomBorderColor = Color.Transparent;
+            guna2GroupBox1.CustomizableEdges = customizableEdges5;
+            guna2GroupBox1.Font = new Font("Segoe UI", 9F);
+            guna2GroupBox1.ForeColor = Color.White;
+            guna2GroupBox1.Location = new Point(127, 59);
+            guna2GroupBox1.Name = "guna2GroupBox1";
+            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2GroupBox1.Size = new Size(394, 508);
+            guna2GroupBox1.TabIndex = 24;
+            // 
             // FrmLivroInf
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(646, 673);
             Controls.Add(BtnFechar);
-            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(guna2Button1);
             Controls.Add(TxtGenero);
             Controls.Add(TxtAno);
             Controls.Add(TxtEditora);
             Controls.Add(TxtAutor);
             Controls.Add(TxtTitulo);
+            Controls.Add(guna2GroupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmLivroInf";
             Text = "FrmLivroInf";
+            guna2GroupBox1.ResumeLayout(false);
+            guna2GroupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -222,5 +247,6 @@
         private Label label5;
         private Label label6;
         private Guna.UI2.WinForms.Guna2Button BtnFechar;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
     }
 }
