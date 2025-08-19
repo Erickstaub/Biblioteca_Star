@@ -66,19 +66,17 @@
             guna2Panel1.Controls.Add(BtnHome);
             guna2Panel1.CustomizableEdges = customizableEdges11;
             guna2Panel1.Location = new Point(0, 0);
-            guna2Panel1.Margin = new Padding(2, 2, 2, 2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel1.Size = new Size(210, 464);
+            guna2Panel1.Size = new Size(300, 773);
             guna2Panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(210, 119);
+            pictureBox1.Size = new Size(300, 198);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -94,11 +92,10 @@
             BtnSair.FillColor = Color.Brown;
             BtnSair.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.Black;
-            BtnSair.Location = new Point(-2, 422);
-            BtnSair.Margin = new Padding(2, 2, 2, 2);
+            BtnSair.Location = new Point(-3, 703);
             BtnSair.Name = "BtnSair";
             BtnSair.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            BtnSair.Size = new Size(210, 41);
+            BtnSair.Size = new Size(300, 68);
             BtnSair.TabIndex = 5;
             BtnSair.Text = "Sair";
             BtnSair.Click += BtnSair_Click;
@@ -114,11 +111,10 @@
             BtnAluno.FillColor = Color.SkyBlue;
             BtnAluno.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnAluno.ForeColor = Color.Black;
-            BtnAluno.Location = new Point(0, 231);
-            BtnAluno.Margin = new Padding(2, 2, 2, 2);
+            BtnAluno.Location = new Point(0, 385);
             BtnAluno.Name = "BtnAluno";
             BtnAluno.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            BtnAluno.Size = new Size(210, 41);
+            BtnAluno.Size = new Size(300, 68);
             BtnAluno.TabIndex = 4;
             BtnAluno.Text = "Aluno";
             BtnAluno.Click += BtnAluno_Click;
@@ -134,11 +130,10 @@
             BtnEmpre.FillColor = Color.SkyBlue;
             BtnEmpre.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnEmpre.ForeColor = Color.Black;
-            BtnEmpre.Location = new Point(0, 193);
-            BtnEmpre.Margin = new Padding(2, 2, 2, 2);
+            BtnEmpre.Location = new Point(0, 322);
             BtnEmpre.Name = "BtnEmpre";
             BtnEmpre.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            BtnEmpre.Size = new Size(210, 41);
+            BtnEmpre.Size = new Size(300, 68);
             BtnEmpre.TabIndex = 3;
             BtnEmpre.Text = "Alugueis";
             BtnEmpre.Click += BtnEmpre_Click;
@@ -154,11 +149,10 @@
             BtnAdd.FillColor = Color.SkyBlue;
             BtnAdd.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnAdd.ForeColor = Color.Black;
-            BtnAdd.Location = new Point(0, 155);
-            BtnAdd.Margin = new Padding(2, 2, 2, 2);
+            BtnAdd.Location = new Point(0, 258);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            BtnAdd.Size = new Size(210, 41);
+            BtnAdd.Size = new Size(300, 68);
             BtnAdd.TabIndex = 2;
             BtnAdd.Text = "Livros";
             BtnAdd.Click += BtnAdd_Click;
@@ -174,11 +168,10 @@
             BtnHome.FillColor = Color.SkyBlue;
             BtnHome.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnHome.ForeColor = Color.Black;
-            BtnHome.Location = new Point(0, 117);
-            BtnHome.Margin = new Padding(2, 2, 2, 2);
+            BtnHome.Location = new Point(0, 195);
             BtnHome.Name = "BtnHome";
             BtnHome.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            BtnHome.Size = new Size(210, 41);
+            BtnHome.Size = new Size(300, 68);
             BtnHome.TabIndex = 1;
             BtnHome.Text = "Home";
             // 
@@ -190,26 +183,24 @@
             BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             BtnFechar.FillColor = Color.WhiteSmoke;
-            BtnFechar.Font = new Font("Segoe UI", 20F);
+            BtnFechar.Font = new Font("Segoe UI", 23F);
             BtnFechar.ForeColor = Color.Black;
-            BtnFechar.Location = new Point(861, 0);
-            BtnFechar.Margin = new Padding(2, 2, 2, 2);
+            BtnFechar.Location = new Point(1230, 0);
             BtnFechar.Name = "BtnFechar";
             BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            BtnFechar.Size = new Size(46, 41);
+            BtnFechar.Size = new Size(66, 68);
             BtnFechar.TabIndex = 6;
             BtnFechar.Text = "X";
             BtnFechar.Click += BtnFechar_Click;
             // 
             // FrmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(906, 464);
+            ClientSize = new Size(1294, 773);
             Controls.Add(BtnFechar);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 2, 2, 2);
             Name = "FrmPrincipal";
             Text = "FrmPrincipal";
             guna2Panel1.ResumeLayout(false);

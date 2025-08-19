@@ -184,7 +184,7 @@
             BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             BtnFechar.FillColor = Color.Transparent;
-            BtnFechar.Font = new Font("Segoe UI", 20F);
+            BtnFechar.Font = new Font("Segoe UI", 23F);
             BtnFechar.ForeColor = Color.Black;
             BtnFechar.Location = new Point(312, 0);
             BtnFechar.Name = "BtnFechar";
