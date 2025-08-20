@@ -40,6 +40,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            TxtTotal = new Label();
+            TxtMulta = new Label();
+            label10 = new Label();
+            label9 = new Label();
             TxtLivro = new Label();
             TxtAluno = new Label();
             label8 = new Label();
@@ -60,10 +64,7 @@
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             TxtISBN = new Guna.UI2.WinForms.Guna2TextBox();
-            label9 = new Label();
-            label10 = new Label();
-            TxtMulta = new Label();
-            TxtTotal = new Label();
+            TxtSalva = new Label();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -98,6 +99,7 @@
             guna2GroupBox1.Controls.Add(BtnFechar);
             guna2GroupBox1.Controls.Add(guna2Button1);
             guna2GroupBox1.Controls.Add(TxtISBN);
+            guna2GroupBox1.Controls.Add(TxtSalva);
             guna2GroupBox1.CustomBorderColor = Color.Transparent;
             guna2GroupBox1.CustomizableEdges = customizableEdges9;
             guna2GroupBox1.Font = new Font("Segoe UI", 9F);
@@ -107,6 +109,55 @@
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2GroupBox1.Size = new Size(719, 618);
             guna2GroupBox1.TabIndex = 25;
+            // 
+            // TxtTotal
+            // 
+            TxtTotal.AutoSize = true;
+            TxtTotal.BackColor = Color.White;
+            TxtTotal.Font = new Font("Century Gothic", 15F);
+            TxtTotal.ForeColor = Color.Black;
+            TxtTotal.Location = new Point(172, 440);
+            TxtTotal.Name = "TxtTotal";
+            TxtTotal.Size = new Size(25, 37);
+            TxtTotal.TabIndex = 54;
+            TxtTotal.Text = ".";
+            // 
+            // TxtMulta
+            // 
+            TxtMulta.AutoSize = true;
+            TxtMulta.BackColor = Color.White;
+            TxtMulta.Font = new Font("Century Gothic", 15F);
+            TxtMulta.ForeColor = Color.Black;
+            TxtMulta.Location = new Point(179, 396);
+            TxtMulta.Name = "TxtMulta";
+            TxtMulta.Size = new Size(25, 37);
+            TxtMulta.TabIndex = 53;
+            TxtMulta.Text = ".";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.White;
+            label10.Font = new Font("Century Gothic", 15F);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(74, 396);
+            label10.Name = "label10";
+            label10.Size = new Size(108, 37);
+            label10.TabIndex = 52;
+            label10.Text = "Multa:";
+            label10.Click += label10_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.White;
+            label9.Font = new Font("Century Gothic", 15F);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(74, 440);
+            label9.Name = "label9";
+            label9.Size = new Size(94, 37);
+            label9.TabIndex = 51;
+            label9.Text = "Total:";
             // 
             // TxtLivro
             // 
@@ -285,6 +336,7 @@
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.Enabled = false;
             guna2Button2.FillColor = Color.SteelBlue;
             guna2Button2.Font = new Font("Segoe UI", 14F);
             guna2Button2.ForeColor = Color.White;
@@ -294,6 +346,7 @@
             guna2Button2.Size = new Size(281, 83);
             guna2Button2.TabIndex = 24;
             guna2Button2.Text = "Imprimir";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // pictureBox2
             // 
@@ -355,6 +408,7 @@
             guna2Button1.Size = new Size(281, 83);
             guna2Button1.TabIndex = 12;
             guna2Button1.Text = "Baixar";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // TxtISBN
             // 
@@ -380,54 +434,17 @@
             TxtISBN.Size = new Size(22, 7);
             TxtISBN.TabIndex = 14;
             // 
-            // label9
+            // TxtSalva
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.White;
-            label9.Font = new Font("Century Gothic", 15F);
-            label9.ForeColor = Color.Black;
-            label9.Location = new Point(74, 440);
-            label9.Name = "label9";
-            label9.Size = new Size(94, 37);
-            label9.TabIndex = 51;
-            label9.Text = "Total:";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.White;
-            label10.Font = new Font("Century Gothic", 15F);
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(74, 396);
-            label10.Name = "label10";
-            label10.Size = new Size(108, 37);
-            label10.TabIndex = 52;
-            label10.Text = "Multa:";
-            label10.Click += label10_Click;
-            // 
-            // TxtMulta
-            // 
-            TxtMulta.AutoSize = true;
-            TxtMulta.BackColor = Color.White;
-            TxtMulta.Font = new Font("Century Gothic", 15F);
-            TxtMulta.ForeColor = Color.Black;
-            TxtMulta.Location = new Point(179, 396);
-            TxtMulta.Name = "TxtMulta";
-            TxtMulta.Size = new Size(25, 37);
-            TxtMulta.TabIndex = 53;
-            TxtMulta.Text = ".";
-            // 
-            // TxtTotal
-            // 
-            TxtTotal.AutoSize = true;
-            TxtTotal.BackColor = Color.White;
-            TxtTotal.Font = new Font("Century Gothic", 15F);
-            TxtTotal.ForeColor = Color.Black;
-            TxtTotal.Location = new Point(172, 440);
-            TxtTotal.Name = "TxtTotal";
-            TxtTotal.Size = new Size(25, 37);
-            TxtTotal.TabIndex = 54;
-            TxtTotal.Text = ".";
+            TxtSalva.AutoSize = true;
+            TxtSalva.BackColor = Color.White;
+            TxtSalva.Font = new Font("Century Gothic", 15F);
+            TxtSalva.ForeColor = Color.Black;
+            TxtSalva.Location = new Point(604, 538);
+            TxtSalva.Name = "TxtSalva";
+            TxtSalva.Size = new Size(25, 37);
+            TxtSalva.TabIndex = 55;
+            TxtSalva.Text = ".";
             // 
             // FrmRecibo
             // 
@@ -472,5 +489,6 @@
         private Label label9;
         private Label TxtTotal;
         private Label TxtMulta;
+        private Label TxtSalva;
     }
 }

@@ -57,7 +57,7 @@ namespace BibliotecaStar
             {
 
 
-                var usucad = new FrmAluguelCad(_aluguel);
+                var usucad = new FrmRecibo(_aluguel);
                 usucad.ShowDialog();
                 _aluguel = null;
 
@@ -68,6 +68,11 @@ namespace BibliotecaStar
         private void BtnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
