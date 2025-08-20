@@ -48,5 +48,10 @@ namespace FrmLogin
             var frmemprestimo = new FrmAluguel();
             frmemprestimo.ShowDialog();
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
