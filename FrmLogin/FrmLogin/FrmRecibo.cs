@@ -39,9 +39,9 @@ namespace BibliotecaStar
                 TxtMulta.Text = _aluguel.multa.ToString("C2");
                 TxtTotal.Text = (multa) + " R$";
                 var nomealuno = banco.Alunos.FirstOrDefault(a => a.Id == int.Parse(TxtAlunoId.Text));
-                TxtAluno.Text = nomealuno.nome;
+                TxtAluno.Text = nomealuno?.nome;
                 var livro = banco.Livros.FirstOrDefault(l => l.Id == int.Parse(TxtLivroId.Text));
-                TxtLivro.Text = livro.titulo;
+                TxtLivro.Text = livro?.titulo;
 
             }
         }
@@ -71,7 +71,7 @@ namespace BibliotecaStar
 
         private void criarPDF()
         {
-            var a = 0;
+        
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
                 sfd.Filter = "PDF Files|*.pdf";
