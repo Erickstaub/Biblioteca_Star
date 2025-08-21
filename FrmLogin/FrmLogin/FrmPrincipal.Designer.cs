@@ -80,7 +80,7 @@
             BtnHome.DisabledState.CustomBorderColor = Color.DarkGray;
             BtnHome.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BtnHome.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            BtnHome.FillColor = Color.SkyBlue;
+            BtnHome.FillColor = Color.PaleGreen;
             BtnHome.Font = new Font("Century Gothic", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnHome.ForeColor = Color.Black;
             BtnHome.Location = new Point(409, 218);
