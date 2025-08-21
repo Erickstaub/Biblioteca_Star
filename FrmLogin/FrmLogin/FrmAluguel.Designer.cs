@@ -193,7 +193,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 20F);
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.DarkBlue;
             label1.Location = new Point(565, 87);
             label1.Name = "label1";
             label1.Size = new Size(53, 54);
