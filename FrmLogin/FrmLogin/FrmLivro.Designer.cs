@@ -62,6 +62,7 @@
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             pictureBox3 = new PictureBox();
+            label1 = new Label();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
@@ -303,11 +304,24 @@
             pictureBox3.TabIndex = 15;
             pictureBox3.TabStop = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.ForeColor = Color.DarkBlue;
+            label1.Location = new Point(410, 105);
+            label1.Name = "label1";
+            label1.Size = new Size(53, 54);
+            label1.TabIndex = 20;
+            label1.Text = "⌕";
+            // 
             // FrmLivro
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1294, 773);
+            Controls.Add(label1);
             Controls.Add(guna2Button3);
             Controls.Add(guna2Button2);
             Controls.Add(guna2Button1);
@@ -325,6 +339,7 @@
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -341,5 +356,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
+        private Label label1;
     }
 }
