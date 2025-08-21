@@ -110,5 +110,15 @@ namespace BibliotecaStar
         {
             this.Close();
         }
+
+        private void BtnEmpre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
