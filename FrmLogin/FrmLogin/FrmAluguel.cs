@@ -52,6 +52,22 @@ namespace BibliotecaStar
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             _aluguel = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as emprestimo;
+            guna2Button1.Enabled = true;
+        }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            _aluguel = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as emprestimo;
             string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
             if (_aluguel != null)
             {
@@ -65,14 +81,18 @@ namespace BibliotecaStar
             }
         }
 
-        private void BtnFechar_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            if (_aluguel != null)
+            {
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
+                var usuca = new FrmAluguelCad(_aluguel);
+                usuca.ShowDialog();
+                _aluguel = null;
+
+
+            }
         }
     }
 }
