@@ -64,20 +64,22 @@ namespace BibliotecaStar
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-         
+
             criarPDF();
 
         }
 
         private void criarPDF()
         {
-        
+
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
+                string pegaPasta = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                sfd.InitialDirectory = pegaPasta;
                 sfd.Filter = "PDF Files|*.pdf";
                 sfd.Title = "Salvar Recibo";
                 sfd.FileName = $"Recibo_de_{TxtAluno.Text}-{TxtLivro.Text}.pdf";
-                
+
 
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
@@ -111,7 +113,7 @@ namespace BibliotecaStar
                     msg.Caption = "Sucesso";
                     msg.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
                     msg.Show();
-                   guna2Button2.Enabled = true;
+                    guna2Button2.Enabled = true;
                 }
             }
 
@@ -127,7 +129,11 @@ namespace BibliotecaStar
                 UseShellExecute = true
             });
         }
-        
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
+}
 

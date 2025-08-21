@@ -389,6 +389,7 @@
             BtnFechar.Size = new Size(66, 68);
             BtnFechar.TabIndex = 17;
             BtnFechar.Text = "X";
+            BtnFechar.Click += BtnFechar_Click;
             // 
             // guna2Button1
             // 
