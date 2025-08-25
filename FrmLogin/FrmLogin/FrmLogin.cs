@@ -38,7 +38,7 @@ namespace FrmLogin
 
             }
 
-            if (UsuarioValido)
+            if (UsuarioValido = false)
             {
 
                 return true;
@@ -48,7 +48,7 @@ namespace FrmLogin
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
                 msg.Text = "Essa Conta nao existe!";
                 msg.Caption = "Erro";
-                msg.Icon = MessageDialogIcon.Information;
+                msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
             }
 
