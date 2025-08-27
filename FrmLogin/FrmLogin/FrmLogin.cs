@@ -38,7 +38,7 @@ namespace FrmLogin
 
             }
 
-            if (UsuarioValido = false)
+            if (UsuarioValido = true)
             {
 
                 return true;
