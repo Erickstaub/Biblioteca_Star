@@ -45,12 +45,12 @@
             label6 = new Label();
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label2 = new Label();
             pictureBox2 = new PictureBox();
+            label2 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -204,53 +204,17 @@
             guna2GroupBox1.Size = new Size(562, 634);
             guna2GroupBox1.TabIndex = 24;
             // 
-            // label7
+            // pictureBox2
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.White;
-            label7.Font = new Font("Century Gothic", 20F);
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(77, 181);
-            label7.Name = "label7";
-            label7.Size = new Size(136, 49);
-            label7.TabIndex = 21;
-            label7.Text = "Autor:";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.White;
-            label8.Font = new Font("Century Gothic", 20F);
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(77, 237);
-            label8.Name = "label8";
-            label8.Size = new Size(169, 49);
-            label8.TabIndex = 22;
-            label8.Text = "Editora:";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.White;
-            label9.Font = new Font("Century Gothic", 20F);
-            label9.ForeColor = Color.Black;
-            label9.Location = new Point(77, 286);
-            label9.Name = "label9";
-            label9.Size = new Size(208, 49);
-            label9.TabIndex = 23;
-            label9.Text = "Lançado:";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.White;
-            label10.Font = new Font("Century Gothic", 20F);
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(77, 336);
-            label10.Name = "label10";
-            label10.Size = new Size(182, 49);
-            label10.TabIndex = 24;
-            label10.Text = "Genero:";
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(3, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(101, 93);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 26;
+            pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -264,24 +228,60 @@
             label2.TabIndex = 25;
             label2.Text = "ALUGAR";
             // 
-            // pictureBox2
+            // label10
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(101, 93);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 26;
-            pictureBox2.TabStop = false;
+            label10.AutoSize = true;
+            label10.BackColor = Color.White;
+            label10.Font = new Font("Century Gothic", 20F);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(77, 336);
+            label10.Name = "label10";
+            label10.Size = new Size(182, 49);
+            label10.TabIndex = 24;
+            label10.Text = "Genero:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.White;
+            label9.Font = new Font("Century Gothic", 20F);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(77, 286);
+            label9.Name = "label9";
+            label9.Size = new Size(208, 49);
+            label9.TabIndex = 23;
+            label9.Text = "Lançado:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.White;
+            label8.Font = new Font("Century Gothic", 20F);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(77, 237);
+            label8.Name = "label8";
+            label8.Size = new Size(169, 49);
+            label8.TabIndex = 22;
+            label8.Text = "Editora:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.White;
+            label7.Font = new Font("Century Gothic", 20F);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(77, 181);
+            label7.Name = "label7";
+            label7.Size = new Size(136, 49);
+            label7.TabIndex = 21;
+            label7.Text = "Autor:";
             // 
             // FrmLivroInf
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(646, 673);
+            ClientSize = new Size(959, 673);
             Controls.Add(guna2GroupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmLivroInf";
