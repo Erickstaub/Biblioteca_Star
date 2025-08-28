@@ -175,7 +175,12 @@ namespace BibliotecaStar
             {
                 comboBox1.Text = null;
             }
-           
+
+        }
+
+        private void FrmAluguelCad_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
