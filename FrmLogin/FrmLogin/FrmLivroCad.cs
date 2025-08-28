@@ -56,6 +56,15 @@ namespace BibliotecaStar
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            if(comboBox1.Text == "Genero")
+            {
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "Selecione um genero!";
+                msg.Caption = "Erro!";
+                msg.Icon = MessageDialogIcon.Error;
+                msg.Show();
+                return;
+            }
             if (string.IsNullOrWhiteSpace(TxtTitulo.Text) || string.IsNullOrWhiteSpace(TxtAutor.Text) || string.IsNullOrWhiteSpace(TxtEditora.Text) || string.IsNullOrWhiteSpace(TxtAno.Text) || string.IsNullOrWhiteSpace(TxtQuant.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || int.Parse(TxtQuant.Text) < 1)
             {
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
