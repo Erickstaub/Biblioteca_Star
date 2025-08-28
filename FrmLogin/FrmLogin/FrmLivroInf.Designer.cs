@@ -121,7 +121,7 @@
             guna2Button1.FillColor = Color.Gold;
             guna2Button1.Font = new Font("Century Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2Button1.ForeColor = Color.Black;
-            guna2Button1.Location = new Point(77, 551);
+            guna2Button1.Location = new Point(348, 501);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button1.Size = new Size(409, 68);
@@ -147,7 +147,7 @@
             label6.BackColor = Color.White;
             label6.Font = new Font("Century Gothic", 25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(204, 487);
+            label6.Location = new Point(469, 437);
             label6.Name = "label6";
             label6.Size = new Size(155, 61);
             label6.TabIndex = 19;
@@ -165,7 +165,7 @@
             BtnFechar.FillColor = Color.Transparent;
             BtnFechar.Font = new Font("Segoe UI", 23F);
             BtnFechar.ForeColor = Color.Black;
-            BtnFechar.Location = new Point(480, 0);
+            BtnFechar.Location = new Point(789, 0);
             BtnFechar.Name = "BtnFechar";
             BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges4;
             BtnFechar.Size = new Size(82, 75);
@@ -201,7 +201,7 @@
             guna2GroupBox1.Location = new Point(41, 27);
             guna2GroupBox1.Name = "guna2GroupBox1";
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2GroupBox1.Size = new Size(562, 634);
+            guna2GroupBox1.Size = new Size(874, 634);
             guna2GroupBox1.TabIndex = 24;
             // 
             // pictureBox2
@@ -220,12 +220,12 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Font = new Font("Century Gothic", 30F);
+            label2.Font = new Font("Century Gothic", 40F);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(164, 10);
+            label2.Location = new Point(110, 0);
             label2.Name = "label2";
-            label2.Size = new Size(268, 74);
-            label2.TabIndex = 25;
+            label2.Size = new Size(363, 96);
+            label2.TabIndex = 40;
             label2.Text = "ALUGAR";
             // 
             // label10
