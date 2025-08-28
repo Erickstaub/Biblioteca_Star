@@ -36,8 +36,9 @@ namespace BibliotecaStar
             if (_alunoselec != null)
             {
                 EditarAluno();
-            }
-            else if (TxtNome.Text == "" || TxtSenha.Text == "" || TxtConfSenha.Text == "" || TxtEmail.Text == "" || TxtIdade.Text == "" || TxtTurma.Text == "")
+            } else if (TxtSenha.Text == TxtConfSenha.Text) 
+            {
+            if (TxtNome.Text == "" || TxtSenha.Text == "" || TxtConfSenha.Text == "" || TxtEmail.Text == "" || TxtIdade.Text == "" || TxtTurma.Text == "")
             {
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
                 msg.Text = "Preencha todos os campos!";
@@ -49,6 +50,16 @@ namespace BibliotecaStar
             {
 
                 InserirAluno();
+            }
+            }else 
+            {
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "As senhas são diferentes!";
+                msg.Caption = "Erro";
+                msg.Icon = MessageDialogIcon.Error;
+                msg.Show();
+                TxtConfSenha.Focus();
+               
             }
         }
 
@@ -108,21 +119,7 @@ namespace BibliotecaStar
 
         private void TxtConfSenha_Leave(object sender, EventArgs e)
         {
-            if (TxtSenha.Text != TxtConfSenha.Text)
-            {
-                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
-                msg.Text = "As senhas são diferentes!";
-                msg.Caption = "Erro";
-                msg.Icon = MessageDialogIcon.Error;
-                msg.Show();
-                TxtConfSenha.Focus();
-                guna2Button1.Enabled = false;
-
-            }
-            else
-            {
-                guna2Button1.Enabled = true;
-            }
+            
         }
 
         private void TxtSenha_Leave(object sender, EventArgs e)
