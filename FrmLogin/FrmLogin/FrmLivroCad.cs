@@ -33,7 +33,7 @@ namespace BibliotecaStar
 
         private void CarregarDados()
         {
-           using (var banco = new DBContext())
+            using (var banco = new DBContext())
             {
                 if (livroselec != null)
                 {
@@ -48,6 +48,15 @@ namespace BibliotecaStar
             }
         }
 
+        private void BuscarLivro()
+        {
+            using (var bd = new DBContext())
+            {
+                var livros = bd.Livros.AsQueryable();
+
+                guna2DataGridView1.DataSource = livros.ToList();
+            }
+        }
         private void FrmLivroCad_Load(object sender, EventArgs e)
         {
 
@@ -56,7 +65,7 @@ namespace BibliotecaStar
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if(comboBox1.Text == "Genero")
+            if (comboBox1.Text == "Genero")
             {
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
                 msg.Text = "Selecione um genero!";
@@ -79,23 +88,26 @@ namespace BibliotecaStar
                 if (livroselec != null)
                 {
                     EditarLivro();
+
                 }
                 else
                 {
-                        string opcoes = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                        Random ran = new Random();
-                        string isbn = "";
-                        for (int i = 0; i < 13; i++)
-                            isbn += opcoes[ran.Next(opcoes.Length)];
-                        TxtISBN.Text = isbn;
-                        InserirLivro();
+                    string opcoes = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                    Random ran = new Random();
+                    string isbn = "";
+                    for (int i = 0; i < 13; i++)
+                        isbn += opcoes[ran.Next(opcoes.Length)];
+                    TxtISBN.Text = isbn;
+                    InserirLivro();
+
+
                 }
             }
         }
 
         private void EditarLivro()
         {
-           
+
             using (var banco = new DBContext())
             {
                 string titulo = TxtTitulo.Text;
@@ -121,6 +133,7 @@ namespace BibliotecaStar
                 msg.Icon = MessageDialogIcon.Information;
                 msg.Show();
                 this.Close();
+
             }
         }
 
@@ -170,5 +183,7 @@ namespace BibliotecaStar
         {
             this.Close();
         }
+
+
     }
 }

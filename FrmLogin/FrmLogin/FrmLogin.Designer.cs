@@ -39,6 +39,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             label1 = new Label();
             pictureBox2 = new PictureBox();
@@ -46,6 +48,7 @@
             guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            BtnFechar = new Guna.UI2.WinForms.Guna2Button();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -188,6 +191,27 @@
             guna2Button1.Text = "Conecte-se";
             guna2Button1.Click += guna2Button1_Click;
             // 
+            // BtnFechar
+            // 
+            BtnFechar.BackColor = Color.Transparent;
+            BtnFechar.BackgroundImageLayout = ImageLayout.None;
+            BtnFechar.CustomizableEdges = customizableEdges11;
+            BtnFechar.DisabledState.BorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtnFechar.FillColor = Color.Transparent;
+            BtnFechar.Font = new Font("Segoe UI", 20F);
+            BtnFechar.ForeColor = Color.White;
+            BtnFechar.Location = new Point(730, -3);
+            BtnFechar.Name = "BtnFechar";
+            BtnFechar.PressedColor = Color.Transparent;
+            BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            BtnFechar.Size = new Size(64, 56);
+            BtnFechar.TabIndex = 39;
+            BtnFechar.Text = "X";
+            BtnFechar.Click += BtnFechar_Click;
+            // 
             // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -195,6 +219,7 @@
             BackColor = SystemColors.ButtonHighlight;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(785, 677);
+            Controls.Add(BtnFechar);
             Controls.Add(guna2GroupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmLogin";
@@ -214,5 +239,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Label label1;
         private PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2Button BtnFechar;
     }
 }

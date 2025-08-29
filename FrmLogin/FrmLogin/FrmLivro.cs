@@ -22,6 +22,10 @@ namespace BibliotecaStar
         private void FrmLivro_Load(object sender, EventArgs e)
         {
             BuscarLivro();
+            guna2DataGridView1.BackgroundColor = Color.White;
+            guna2DataGridView1.DefaultCellStyle.BackColor = Color.White;
+            guna2DataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            guna2DataGridView1.EnableHeadersVisualStyles = false;
         }
 
         private void BuscarLivro()
@@ -43,6 +47,7 @@ namespace BibliotecaStar
         {
             var cadl = new FrmLivroCad();
             cadl.ShowDialog();
+            BuscarLivro();
         }
 
         private void TxtPesquisa_TextChanged(object sender, EventArgs e)
@@ -76,8 +81,9 @@ namespace BibliotecaStar
             if (livroselec != null)
             {
                 var livcad = new FrmLivroCad(livroselec);
-                livcad.Show();
+                livcad.ShowDialog();
                 livroselec = null;
+                BuscarLivro();
             }
         }
 
@@ -117,6 +123,11 @@ namespace BibliotecaStar
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

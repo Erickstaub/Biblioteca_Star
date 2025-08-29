@@ -15,7 +15,7 @@ namespace FrmLogin
 
             bool loginValido = ValidateLogin(guna2TextBox2.Text, guna2TextBox1.Text);
 
-            if (loginValido)
+            if (loginValido = true)
             {
                 this.Hide();
                 var frmp = new FrmPrincipal();
@@ -59,6 +59,11 @@ namespace FrmLogin
         {
             var criarconta = new FrmAlunoCad();
             criarconta.ShowDialog();
+        }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

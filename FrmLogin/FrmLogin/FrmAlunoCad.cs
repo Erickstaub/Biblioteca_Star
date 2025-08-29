@@ -132,7 +132,7 @@ namespace BibliotecaStar
                 msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
                 TxtSenha.Focus();
-                guna2Button1.Enabled = false;
+                
             }
         }
 
