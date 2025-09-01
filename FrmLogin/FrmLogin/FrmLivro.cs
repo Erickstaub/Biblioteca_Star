@@ -57,7 +57,7 @@ namespace BibliotecaStar
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            livroselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as livro;
+            
 
         }
 
@@ -129,7 +129,7 @@ namespace BibliotecaStar
 
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            livroselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as livro;
         }
     }
 }

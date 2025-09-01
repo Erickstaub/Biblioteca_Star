@@ -10,19 +10,6 @@ namespace FrmLogin
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-            bool loginValido = ValidateLogin(guna2TextBox2.Text, guna2TextBox1.Text);
-
-            if (loginValido = true)
-            {
-                this.Hide();
-                var frmp = new FrmPrincipal();
-                frmp.Show();
-
-            }
-        }
         private bool ValidateLogin(string nome, string senha)
         {
             bool UsuarioValido = false;
@@ -32,13 +19,15 @@ namespace FrmLogin
                 var usuario = banco.Alunos.FirstOrDefault(u => u.nome.ToLower().Equals(nome.ToLower()) && u.senha == senha);
 
                 if (usuario is not null)
+                {
                     Uid = usuario.Id;
-                Memoria.UsuarioID = Uid;
-                UsuarioValido = true;
+                    Memoria.UsuarioID = Uid;
+                    UsuarioValido = true;
+                }
 
             }
 
-            if (UsuarioValido = true)
+            if (UsuarioValido == true)
             {
 
                 return true;
@@ -51,8 +40,22 @@ namespace FrmLogin
                 msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
             }
-
             return false;
+
+        }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+            bool loginValido = ValidateLogin(guna2TextBox2.Text, guna2TextBox1.Text);
+
+            
+            if (loginValido == true)
+            {
+                this.Hide();
+                var frmp = new FrmPrincipal();
+                frmp.Show();
+
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

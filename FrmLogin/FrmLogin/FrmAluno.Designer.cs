@@ -41,15 +41,21 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAluno));
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             TxtPesquisa = new Guna.UI2.WinForms.Guna2TextBox();
             BtnEditar = new Guna.UI2.WinForms.Guna2Button();
             BtnExcluir = new Guna.UI2.WinForms.Guna2Button();
-            label1 = new Label();
             BtnFechar = new Guna.UI2.WinForms.Guna2Button();
+            guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // guna2DataGridView1
@@ -75,11 +81,11 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(62, 130);
+            guna2DataGridView1.Location = new Point(61, 153);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 62;
-            guna2DataGridView1.Size = new Size(939, 373);
+            guna2DataGridView1.Size = new Size(897, 373);
             guna2DataGridView1.TabIndex = 10;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -102,6 +108,7 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 33;
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            guna2DataGridView1.CellClick += guna2DataGridView1_CellClick;
             guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick;
             // 
             // guna2Button1
@@ -111,15 +118,15 @@
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.Lime;
+            guna2Button1.FillColor = Color.SteelBlue;
             guna2Button1.Font = new Font("Segoe UI", 14F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(444, 532);
+            guna2Button1.Location = new Point(696, 546);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button1.Size = new Size(270, 68);
             guna2Button1.TabIndex = 13;
-            guna2Button1.Text = "+ Adicionar";
+            guna2Button1.Text = "Adicionar";
             guna2Button1.Click += guna2Button1_Click;
             // 
             // TxtPesquisa
@@ -133,13 +140,13 @@
             TxtPesquisa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtPesquisa.Font = new Font("Segoe UI", 9F);
             TxtPesquisa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtPesquisa.Location = new Point(132, 50);
+            TxtPesquisa.Location = new Point(668, 88);
             TxtPesquisa.Margin = new Padding(4, 5, 4, 5);
             TxtPesquisa.Name = "TxtPesquisa";
             TxtPesquisa.PlaceholderText = "";
             TxtPesquisa.SelectedText = "";
             TxtPesquisa.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            TxtPesquisa.Size = new Size(869, 57);
+            TxtPesquisa.Size = new Size(320, 57);
             TxtPesquisa.TabIndex = 14;
             TxtPesquisa.TextChanged += TxtPesquisa_TextChanged;
             // 
@@ -153,7 +160,7 @@
             BtnEditar.FillColor = Color.Gold;
             BtnEditar.Font = new Font("Segoe UI", 14F);
             BtnEditar.ForeColor = Color.White;
-            BtnEditar.Location = new Point(62, 532);
+            BtnEditar.Location = new Point(61, 546);
             BtnEditar.Name = "BtnEditar";
             BtnEditar.ShadowDecoration.CustomizableEdges = customizableEdges6;
             BtnEditar.Size = new Size(270, 68);
@@ -171,26 +178,13 @@
             BtnExcluir.FillColor = Color.Red;
             BtnExcluir.Font = new Font("Segoe UI", 14F);
             BtnExcluir.ForeColor = Color.White;
-            BtnExcluir.Location = new Point(731, 532);
+            BtnExcluir.Location = new Point(382, 546);
             BtnExcluir.Name = "BtnExcluir";
             BtnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges8;
             BtnExcluir.Size = new Size(270, 68);
             BtnExcluir.TabIndex = 16;
             BtnExcluir.Text = "Excluir";
             BtnExcluir.Click += BtnExcluir_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 20F);
-            label1.ForeColor = Color.DarkBlue;
-            label1.Location = new Point(72, 50);
-            label1.Name = "label1";
-            label1.Size = new Size(53, 54);
-            label1.TabIndex = 20;
-            label1.Text = "⌕";
-            label1.Click += label1_Click;
             // 
             // BtnFechar
             // 
@@ -203,8 +197,8 @@
             BtnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             BtnFechar.FillColor = Color.Transparent;
             BtnFechar.Font = new Font("Segoe UI", 20F);
-            BtnFechar.ForeColor = Color.White;
-            BtnFechar.Location = new Point(1020, -4);
+            BtnFechar.ForeColor = Color.Black;
+            BtnFechar.Location = new Point(959, 0);
             BtnFechar.Name = "BtnFechar";
             BtnFechar.PressedColor = Color.Transparent;
             BtnFechar.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -213,26 +207,70 @@
             BtnFechar.Text = "X";
             BtnFechar.Click += BtnFechar_Click;
             // 
+            // guna2GroupBox1
+            // 
+            guna2GroupBox1.BackColor = Color.Transparent;
+            guna2GroupBox1.BorderColor = Color.White;
+            guna2GroupBox1.BorderRadius = 50;
+            guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(pictureBox1);
+            guna2GroupBox1.Controls.Add(TxtPesquisa);
+            guna2GroupBox1.Controls.Add(BtnFechar);
+            guna2GroupBox1.Controls.Add(BtnExcluir);
+            guna2GroupBox1.Controls.Add(label2);
+            guna2GroupBox1.Controls.Add(BtnEditar);
+            guna2GroupBox1.Controls.Add(guna2Button1);
+            guna2GroupBox1.Controls.Add(guna2DataGridView1);
+            guna2GroupBox1.CustomBorderColor = Color.Transparent;
+            guna2GroupBox1.CustomizableEdges = customizableEdges11;
+            guna2GroupBox1.Font = new Font("Segoe UI", 9F);
+            guna2GroupBox1.ForeColor = Color.White;
+            guna2GroupBox1.Location = new Point(27, 12);
+            guna2GroupBox1.Name = "guna2GroupBox1";
+            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2GroupBox1.Size = new Size(1023, 625);
+            guna2GroupBox1.TabIndex = 39;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(101, 93);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 20F);
+            label2.ForeColor = Color.DarkBlue;
+            label2.Location = new Point(626, 87);
+            label2.Name = "label2";
+            label2.Size = new Size(53, 54);
+            label2.TabIndex = 19;
+            label2.Text = "⌕";
+            // 
             // FrmAluno
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1080, 640);
-            Controls.Add(BtnFechar);
-            Controls.Add(label1);
-            Controls.Add(BtnExcluir);
-            Controls.Add(BtnEditar);
-            Controls.Add(TxtPesquisa);
-            Controls.Add(guna2Button1);
-            Controls.Add(guna2DataGridView1);
+            Controls.Add(guna2GroupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmAluno";
             Text = "FrmAluno";
             Load += FrmAluno_Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            guna2GroupBox1.ResumeLayout(false);
+            guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -242,7 +280,9 @@
         private Guna.UI2.WinForms.Guna2TextBox TxtPesquisa;
         private Guna.UI2.WinForms.Guna2Button BtnEditar;
         private Guna.UI2.WinForms.Guna2Button BtnExcluir;
-        private Label label1;
         private Guna.UI2.WinForms.Guna2Button BtnFechar;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private PictureBox pictureBox1;
+        private Label label2;
     }
 }

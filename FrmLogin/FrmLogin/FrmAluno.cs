@@ -53,14 +53,7 @@ namespace BibliotecaStar
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex > 0)
-            {
-                alunoselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as aluno;
-                //  btnEditar.Enabled = true;
-                //btnExcluir.Enabled = true;
-                string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-
-            }
+           
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
@@ -103,6 +96,18 @@ namespace BibliotecaStar
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > 0)
+            {
+                alunoselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as aluno;
+                //  btnEditar.Enabled = true;
+                //btnExcluir.Enabled = true;
+                string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+
+            }
         }
     }
 }
