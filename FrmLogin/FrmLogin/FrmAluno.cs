@@ -59,6 +59,7 @@ namespace BibliotecaStar
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             new FrmAlunoCad(alunoselec).ShowDialog();
+            alunoselec = null;
             BuscarAluno();
         }
 
