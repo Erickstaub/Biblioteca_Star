@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FrmLogin;
+using Guna.UI2.WinForms;
+using Microsoft.VisualBasic;
 
 namespace BibliotecaStar
 {
@@ -58,6 +60,16 @@ namespace BibliotecaStar
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
+            if(alunoselec == null)
+            {
+                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                msg.Text = "Selecione um usuario!";
+                msg.Caption = "Erro";
+                msg.Icon = MessageDialogIcon.Error;
+                msg.Show();
+                return;
+            }
+
             new FrmAlunoCad(alunoselec).ShowDialog();
             alunoselec = null;
             BuscarAluno();
@@ -103,7 +115,7 @@ namespace BibliotecaStar
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
      
-            if (e.RowIndex > 0)
+            if (e.RowIndex >= 0)
             {
                 alunoselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as aluno;
                 string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
