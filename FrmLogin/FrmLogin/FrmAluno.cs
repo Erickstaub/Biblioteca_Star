@@ -44,6 +44,7 @@ namespace BibliotecaStar
         {
             var frmaluno = new FrmAlunoCad();
             frmaluno.ShowDialog();
+            BuscarAluno();
         }
 
         private void TxtPesquisa_TextChanged(object sender, EventArgs e)
@@ -53,12 +54,12 @@ namespace BibliotecaStar
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             new FrmAlunoCad(alunoselec).ShowDialog();
+            BuscarAluno();
         }
 
         private void BtnExcluir_Click(object sender, EventArgs e)
@@ -100,14 +101,14 @@ namespace BibliotecaStar
 
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+     
             if (e.RowIndex > 0)
             {
                 alunoselec = guna2DataGridView1.Rows[e.RowIndex].DataBoundItem as aluno;
-                //  btnEditar.Enabled = true;
-                //btnExcluir.Enabled = true;
                 string selec = guna2DataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
 
             }
+           
         }
     }
 }

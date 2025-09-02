@@ -90,6 +90,7 @@ namespace BibliotecaStar
                 var usuca = new FrmAluguelCad(_aluguel);
                 usuca.ShowDialog();
                 _aluguel = null;
+                BuscarEmprestimos();
 
 
             }
