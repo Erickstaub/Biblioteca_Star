@@ -113,18 +113,19 @@
             // 
             // guna2Button1
             // 
+            guna2Button1.BorderRadius = 30;
             guna2Button1.CustomizableEdges = customizableEdges1;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button1.FillColor = Color.Gold;
-            guna2Button1.Font = new Font("Century Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2Button1.Font = new Font("Century Gothic", 30F);
             guna2Button1.ForeColor = Color.Black;
-            guna2Button1.Location = new Point(348, 501);
+            guna2Button1.Location = new Point(177, 516);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button1.Size = new Size(409, 68);
+            guna2Button1.Size = new Size(516, 85);
             guna2Button1.TabIndex = 13;
             guna2Button1.Text = "Alugar";
             guna2Button1.Click += guna2Button1_Click;
@@ -145,11 +146,11 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.White;
-            label6.Font = new Font("Century Gothic", 25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Century Gothic", 30F);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(469, 437);
+            label6.Location = new Point(344, 425);
             label6.Name = "label6";
-            label6.Size = new Size(155, 61);
+            label6.Size = new Size(184, 74);
             label6.TabIndex = 19;
             label6.Text = "15 R$";
             // 
@@ -222,7 +223,7 @@
             label2.BackColor = Color.White;
             label2.Font = new Font("Century Gothic", 40F);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(110, 0);
+            label2.Location = new Point(265, 0);
             label2.Name = "label2";
             label2.Size = new Size(363, 96);
             label2.TabIndex = 40;
