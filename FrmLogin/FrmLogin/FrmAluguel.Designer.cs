@@ -48,6 +48,7 @@
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             pictureBox1 = new PictureBox();
             label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -165,6 +166,7 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(label2);
             guna2GroupBox1.Controls.Add(guna2Button1);
             guna2GroupBox1.Controls.Add(pictureBox1);
             guna2GroupBox1.Controls.Add(label1);
@@ -226,6 +228,19 @@
             label1.TabIndex = 19;
             label1.Text = "⌕";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Century Gothic", 30F);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(337, 13);
+            label2.Name = "label2";
+            label2.Size = new Size(252, 74);
+            label2.TabIndex = 24;
+            label2.Text = "Aluguel";
+            label2.Click += label2_Click;
+            // 
             // FrmAluguel
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -253,5 +268,6 @@
         private Label label1;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Label label2;
     }
 }
