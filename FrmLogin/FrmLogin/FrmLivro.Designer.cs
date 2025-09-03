@@ -54,6 +54,7 @@
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             pictureBox1 = new PictureBox();
             label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -220,6 +221,7 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(label1);
             guna2GroupBox1.Controls.Add(pictureBox1);
             guna2GroupBox1.Controls.Add(guna2Button2);
             guna2GroupBox1.Controls.Add(guna2Button3);
@@ -261,6 +263,18 @@
             label2.Size = new Size(53, 54);
             label2.TabIndex = 19;
             label2.Text = "⌕";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Century Gothic", 30F);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(385, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(163, 74);
+            label1.TabIndex = 23;
+            label1.Text = "Livro";
             // 
             // FrmLivro
             // 
