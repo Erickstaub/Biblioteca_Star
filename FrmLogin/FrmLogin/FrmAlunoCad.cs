@@ -36,22 +36,24 @@ namespace BibliotecaStar
             if (_alunoselec != null)
             {
                 EditarAluno();
-            } else if (TxtSenha.Text == TxtConfSenha.Text) 
+            }
+            else if (TxtSenha.Text == TxtConfSenha.Text)
             {
-            if (TxtNome.Text == "" || TxtSenha.Text == "" || TxtConfSenha.Text == "" || TxtEmail.Text == "" || TxtIdade.Text == "" || TxtTurma.Text == "")
-            {
-                var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
-                msg.Text = "Preencha todos os campos!";
-                msg.Caption = "Erro";
-                msg.Icon = MessageDialogIcon.Error;
-                msg.Show();
+                if (TxtNome.Text == "" || TxtSenha.Text == "" || TxtConfSenha.Text == "" || TxtEmail.Text == "" || TxtIdade.Text == "" || TxtTurma.Text == "")
+                {
+                    var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+                    msg.Text = "Preencha todos os campos!";
+                    msg.Caption = "Erro";
+                    msg.Icon = MessageDialogIcon.Error;
+                    msg.Show();
+                }
+                else
+                {
+
+                    InserirAluno();
+                }
             }
             else
-            {
-
-                InserirAluno();
-            }
-            }else 
             {
                 var msg = new Guna.UI2.WinForms.Guna2MessageDialog();
                 msg.Text = "As senhas são diferentes!";
@@ -59,7 +61,7 @@ namespace BibliotecaStar
                 msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
                 TxtConfSenha.Focus();
-               
+
             }
         }
 
@@ -119,7 +121,7 @@ namespace BibliotecaStar
 
         private void TxtConfSenha_Leave(object sender, EventArgs e)
         {
-            
+
         }
 
         private void TxtSenha_Leave(object sender, EventArgs e)
@@ -132,13 +134,18 @@ namespace BibliotecaStar
                 msg.Icon = MessageDialogIcon.Error;
                 msg.Show();
                 TxtSenha.Focus();
-                
+
             }
         }
 
         private void BtnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

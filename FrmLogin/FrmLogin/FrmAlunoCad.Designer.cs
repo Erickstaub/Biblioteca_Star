@@ -277,11 +277,12 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Century Gothic", 30F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(88, 19);
+            label1.Location = new Point(191, 19);
             label1.Name = "label1";
-            label1.Size = new Size(509, 74);
+            label1.Size = new Size(342, 74);
             label1.TabIndex = 22;
-            label1.Text = "Cadastrar Aluno";
+            label1.Text = "Cadastrar ";
+            label1.Click += label1_Click;
             // 
             // TxtConfSenha
             // 
