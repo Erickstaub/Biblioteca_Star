@@ -211,7 +211,7 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button1.Size = new Size(566, 83);
             guna2Button1.TabIndex = 12;
-            guna2Button1.Text = "Adcionar Livro";
+            guna2Button1.Text = "Adicionar Livro";
             guna2Button1.Click += guna2Button1_Click;
             // 
             // TxtISBN
@@ -315,9 +315,10 @@
             label1.ForeColor = Color.Black;
             label1.Location = new Point(122, 19);
             label1.Name = "label1";
-            label1.Size = new Size(473, 74);
+            label1.Size = new Size(458, 74);
             label1.TabIndex = 22;
-            label1.Text = "Cadastrar Livro";
+            label1.Text = "Adicionar Livro";
+            label1.Click += label1_Click;
             // 
             // FrmLivroCad
             // 

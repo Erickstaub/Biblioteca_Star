@@ -47,7 +47,7 @@ namespace BibliotecaStar
             }
         }
 
-  
+
         private void FrmLivroCad_Load(object sender, EventArgs e)
         {
 
@@ -175,6 +175,9 @@ namespace BibliotecaStar
             this.Close();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

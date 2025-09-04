@@ -53,6 +53,7 @@
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             pictureBox1 = new PictureBox();
             label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -213,6 +214,7 @@
             guna2GroupBox1.BorderColor = Color.White;
             guna2GroupBox1.BorderRadius = 50;
             guna2GroupBox1.BorderThickness = 0;
+            guna2GroupBox1.Controls.Add(label1);
             guna2GroupBox1.Controls.Add(pictureBox1);
             guna2GroupBox1.Controls.Add(TxtPesquisa);
             guna2GroupBox1.Controls.Add(BtnFechar);
@@ -255,6 +257,18 @@
             label2.TabIndex = 19;
             label2.Text = "⌕";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Century Gothic", 30F);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(418, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(199, 74);
+            label1.TabIndex = 39;
+            label1.Text = "Aluno";
+            // 
             // FrmAluno
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -284,5 +298,6 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private PictureBox pictureBox1;
         private Label label2;
+        private Label label1;
     }
 }
