@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace FrmLogin.Migrations
+namespace BibliotecaStar.Migrations
 {
     /// <inheritdoc />
     public partial class v4 : Migration

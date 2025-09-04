@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BibliotecaStar;
 
-namespace FrmLogin
+namespace BibliotecaStar
 {
     public partial class FrmPrincipal : Form
     {

@@ -1,7 +1,6 @@
-using BibliotecaStar;
 using Guna.UI2.WinForms;
 
-namespace FrmLogin
+namespace BibliotecaStar
 {
     public partial class FrmLogin : Form
     {

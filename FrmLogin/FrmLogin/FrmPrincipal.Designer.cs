@@ -1,4 +1,4 @@
-﻿namespace FrmLogin
+﻿namespace BibliotecaStar
 {
     partial class FrmPrincipal
     {

@@ -1,4 +1,4 @@
-namespace FrmLogin
+namespace BibliotecaStar
 {
     internal static class Program
     {

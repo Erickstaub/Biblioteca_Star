@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace FrmLogin.Migrations
+namespace BibliotecaStar.Migrations
 {
     [DbContext(typeof(DBContext))]
     partial class DBContextModelSnapshot : ModelSnapshot

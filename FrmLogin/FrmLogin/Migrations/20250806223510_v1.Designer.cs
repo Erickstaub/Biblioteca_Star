@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace FrmLogin.Migrations
+namespace BibliotecaStar.Migrations
 {
     [DbContext(typeof(DBContext))]
     [Migration("20250806223510_v1")]

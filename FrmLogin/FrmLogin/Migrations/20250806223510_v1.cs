@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace FrmLogin.Migrations
+namespace BibliotecaStar.Migrations
 {
     /// <inheritdoc />
     public partial class v1 : Migration
