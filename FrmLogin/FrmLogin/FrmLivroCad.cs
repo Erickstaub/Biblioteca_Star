@@ -48,15 +48,7 @@ namespace BibliotecaStar
             }
         }
 
-        private void BuscarLivro()
-        {
-            using (var bd = new DBContext())
-            {
-                var livros = bd.Livros.AsQueryable();
-
-                guna2DataGridView1.DataSource = livros.ToList();
-            }
-        }
+  
         private void FrmLivroCad_Load(object sender, EventArgs e)
         {
 
