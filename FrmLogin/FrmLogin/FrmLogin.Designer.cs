@@ -163,6 +163,7 @@
             guna2TextBox1.Location = new Point(38, 401);
             guna2TextBox1.Margin = new Padding(10, 11, 10, 11);
             guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PasswordChar = '*';
             guna2TextBox1.PlaceholderForeColor = Color.Black;
             guna2TextBox1.PlaceholderText = "Senha";
             guna2TextBox1.SelectedText = "";
